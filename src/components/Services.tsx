@@ -4,6 +4,8 @@ import iconRelationship from "@/assets/icon-relationship.png";
 import iconLife from "@/assets/icon-life.png";
 import iconEsteem from "@/assets/icon-esteem.png";
 import iconAnxiety from "@/assets/icon-anxiety.png";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const services = [
   {
@@ -29,10 +31,17 @@ const services = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <div className="inline-block mb-4">
             <span className="text-sm font-medium text-primary tracking-wider uppercase">
               Our Services
@@ -51,6 +60,8 @@ const Services = () => {
             <Card 
               key={index}
               className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border bg-card"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <div className="mb-6">
                 <img 

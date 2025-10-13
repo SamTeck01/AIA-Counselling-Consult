@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const plans = [
   {
@@ -43,10 +45,17 @@ const plans = [
 ];
 
 const Pricing = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section id="pricing" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <div className="inline-block mb-4">
             <span className="text-sm font-medium text-primary tracking-wider uppercase">
               Pricing Plan
@@ -61,7 +70,9 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <Card 
               key={index}
-              className={`p-8 ${plan.featured ? 'border-primary shadow-xl scale-105' : ''}`}
+              className={`p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 ${plan.featured ? 'border-primary shadow-xl scale-105' : ''}`}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
               <div className="mb-4">

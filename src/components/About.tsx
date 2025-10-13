@@ -1,17 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { Award, Users } from "lucide-react";
 import aboutImage from "@/assets/about-office.png";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section id="about" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
+          <div className="relative" data-aos="fade-right">
             <img 
               src={aboutImage} 
               alt="Therapy Office" 
-              className="rounded-3xl shadow-xl w-full"
+              className="rounded-3xl shadow-xl w-full hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute -bottom-8 -right-8 bg-card p-6 rounded-2xl shadow-xl border border-border">
               <div className="flex items-center gap-4">
@@ -26,7 +35,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6" data-aos="fade-left">
             <div className="inline-block">
               <span className="text-sm font-medium text-primary tracking-wider uppercase">
                 About Us

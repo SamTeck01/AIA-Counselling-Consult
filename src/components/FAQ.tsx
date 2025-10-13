@@ -4,6 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const faqs = [
   {
@@ -25,11 +27,18 @@ const faqs = [
 ];
 
 const FAQ = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12" data-aos="fade-up">
             <div className="inline-block mb-4">
               <span className="text-sm font-medium text-primary tracking-wider uppercase">
                 FAQ
@@ -40,7 +49,7 @@ const FAQ = () => {
             </h2>
           </div>
 
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="w-full" data-aos="fade-up" data-aos-delay="200">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left font-semibold">
