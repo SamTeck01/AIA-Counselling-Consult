@@ -1,64 +1,159 @@
-import { CheckCircle, Heart, TrendingUp } from "lucide-react";
-import { useEffect } from "react";
-import AOS from "aos";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+
+const stats = [
+  { value: "25+", label: "Years of Experience" },
+  { value: "150k+", label: "Satisfied Clients" },
+  { value: "30+", label: "Countries Reached" },
+  { value: "22k+", label: "Classes Conducted" },
+];
 
 const features = [
   {
-    icon: CheckCircle,
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M16 4l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" />
+      </svg>
+    ),
     title: "Experienced Professionals",
     description: "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
   },
   {
-    icon: Heart,
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <circle cx="16" cy="12" r="4" />
+        <path d="M8 26c0-4 3.5-8 8-8s8 4 8 8" />
+        <circle cx="24" cy="10" r="3" />
+        <path d="M26 20c2 0 4 2 4 4" />
+      </svg>
+    ),
     title: "Client Centered Approach",
     description: "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
   },
   {
-    icon: TrendingUp,
+    icon: (
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M4 16l8 8 16-16" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
     title: "Commitment To Growth",
     description: "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
   },
 ];
 
-const WhyChooseUs = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
+export default function CaseStudies() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-          <div className="inline-block mb-4">
-            <span className="text-sm font-medium text-primary tracking-wider uppercase">
-              Why Choose Us
-            </span>
+    <section id="studies" className="mx-[2%] py-16 bg-primary relative overflow-hidden rounded-[38px]">
+      <div className="container mx-auto px-6 relative z-10 flexCenter flex-col" ref={ref}>
+        {/* Hero Image with Stats Overlay */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="relative rounded-[38px] overflow-hidden mb-16 h-[450px] w-full"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=80"
+            alt="Therapy session"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+          
+          {/* Stats Overlay */}
+          <div className="relative">
+            <div className="absolute bottom-0 left-0 right-0 p-8 w-full">
+              <div className="flex justify-center">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-24 px-10 ">
+                  {stats.map((stat, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={isInView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ delay: 0.2 + index * 0.1, duration: 0.6 }}
+                      className="text-white"
+                    >
+                      <div
+                        className="text-4xl md:text-5xl font-light mb-2"
+                        style={{
+                          fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                          fontWeight: 300,
+                        }}
+                      >
+                        {stat.value}
+                      </div>
+                      <div className="text-sm text-white/90">{stat.label}</div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>  
+            </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Trusted Care, Lasting Positive Change
-          </h2>
-          <p className="text-lg text-muted-foreground mt-4">
-            On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.
-          </p>
+        </motion.div>
+
+        {/* Section Header */}
+        <div className="flexCenter flex-row space-x-7 mb-8">
+          <div className="h-[1.2px] bg-white w-[50px]" />
+          <span className="text-sm text-white tracking-wider uppercase">
+            Why Choose Us
+          </span>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl lg:text-[48px] leading-tight text-white mb-6 max-w-2xl text-center"
+          style={{
+            fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+            fontWeight: 400,
+          }}
+        >
+          Trusted Care, Lasting Positive Change
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="text-white/80 mb-16 max-w-2xl text-center"
+        >
+          On the other hand we denounce with righteous indignation and dislike men who are
+          so beguiled and demoralized by the charms of pleasure pain.
+        </motion.p>
+
+        {/* Feature Cards */}
+        <div className="grid md:grid-cols-3 gap-16">
           {features.map((feature, index) => (
-            <div key={index} className="text-center space-y-4" data-aos="fade-up" data-aos-delay={index * 100}>
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto">
-                <feature.icon className="w-8 h-8 text-accent" />
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.3 + index * 0.15, duration: 0.6 }}
+              className="flexCenter flex-col"
+            >
+              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-12 text-white">
+                {feature.icon}
               </div>
-              <h3 className="text-2xl font-semibold">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
-            </div>
+              <h3
+                className="text-2xl text-white mb-6"
+                style={{
+                  fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                  fontWeight: 400,
+                }}
+              >
+                {feature.title}
+              </h3>
+              <p className="text-white/70 text-base leading-relaxed  text-center">
+                {feature.description}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default WhyChooseUs;
+}

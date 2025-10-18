@@ -1,63 +1,148 @@
-import { Brain, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { motion } from "framer-motion";
+import { Send, Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-primary text-primary-foreground py-16">
+    <footer id="contact" className="py-8 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary-foreground flex items-center justify-center">
-                <Brain className="w-6 h-6 text-primary" />
-              </div>
-              <span className="text-2xl font-bold">Truemo</span>
+        <div className="bg-primary rounded-[50px] px-12 py-16 relative overflow-hidden">
+          {/* Content Grid */}
+          <div className="grid lg:grid-cols-[1fr_auto_auto_auto] gap-16 mb-20 relative z-10">
+            {/* Left Column - Logo & Newsletter */}
+            <div className="space-y-12">
+              {/* Logo */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="flex items-center gap-3"
+              >
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 bg-primary rounded-full" />
+                </div>
+                <span className="text-white text-2xl font-light" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+                  Truemo
+                </span>
+              </motion.div>
+
+              {/* Newsletter */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-white/80 text-sm mb-4 font-light">Newsletter</h3>
+                <div className="relative">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    className="w-full bg-transparent border-b border-white/30 text-white placeholder:text-white/50 py-3 pr-10 focus:outline-none focus:border-white/60 transition-colors"
+                  />
+                  <button className="absolute right-0 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors">
+                    <Send className="w-5 h-5" />
+                  </button>
+                </div>
+              </motion.div>
             </div>
-            <p className="text-primary-foreground/80">
-              Professional psychology and counseling services focusing on mental health and wellness.
+
+            {/* Studio Column */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h3 className="text-white text-base font-normal mb-6">Studio</h3>
+              <ul className="space-y-4">
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Doctors</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Testimonials</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Case Studies</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Pricing</a></li>
+              </ul>
+            </motion.div>
+
+            {/* Navigation Column */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h3 className="text-white text-base font-normal mb-6">Navigation</h3>
+              <ul className="space-y-4">
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Company</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Press Media</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Our Blog</a></li>
+                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+              </ul>
+            </motion.div>
+
+            {/* Contact Column */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h3 className="text-white text-base font-normal mb-6">Contact</h3>
+              <ul className="space-y-4">
+                <li className="text-white/60 text-sm">Madison Avenue 21c</li>
+                <li className="text-white/60 text-sm">00 411 22 0123</li>
+                <li className="text-white/60 text-sm">00 411 22 0134</li>
+                <li><a href="mailto:support@truemo@gmail.com" className="text-white/60 hover:text-white transition-colors text-sm">support@truemo@gmail.com</a></li>
+              </ul>
+            </motion.div>
+          </div>
+
+          {/* Bottom Section */}
+          <div className="flex items-center justify-between border-t border-white/10 pt-8 relative z-10">
+            {/* Social Icons */}
+            <div className="flex gap-3">
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                href="#"
+                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                href="#"
+                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+              >
+                <Linkedin className="w-4 h-4" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                href="#"
+                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+              >
+                <Facebook className="w-4 h-4" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                href="#"
+                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+              >
+                <Twitter className="w-4 h-4" />
+              </motion.a>
+            </div>
+
+            {/* Copyright */}
+            <p className="text-white/40 text-sm">
+              Copyright © 2025 <span className="text-white/60">Truemo</span>, All Rights Reserved.
             </p>
           </div>
 
-          <div>
-            <h3 className="font-semibold mb-4 text-lg">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><a href="#home" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</a></li>
-              <li><a href="#about" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">About</a></li>
-              <li><a href="#services" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Services</a></li>
-              <li><a href="#pricing" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">Pricing</a></li>
-            </ul>
+          {/* Large Truemo Text Background */}
+          <div className="absolute bottom-0 right-12 text-[180px] font-light text-white/5 leading-none pointer-events-none" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            Truemo
           </div>
-
-          <div>
-            <h3 className="font-semibold mb-4 text-lg">Services</h3>
-            <ul className="space-y-2">
-              <li className="text-primary-foreground/80">Relationship Dating</li>
-              <li className="text-primary-foreground/80">Life Counseling</li>
-              <li className="text-primary-foreground/80">Self Esteem</li>
-              <li className="text-primary-foreground/80">Anxiety Therapy</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold mb-4 text-lg">Connect</h3>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2025 Truemo. All rights reserved.</p>
         </div>
       </div>
     </footer>

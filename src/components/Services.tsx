@@ -1,83 +1,154 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import iconRelationship from "@/assets/icon-relationship.png";
-import iconLife from "@/assets/icon-life.png";
-import iconEsteem from "@/assets/icon-esteem.png";
-import iconAnxiety from "@/assets/icon-anxiety.png";
-import { useEffect } from "react";
-import AOS from "aos";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+import relationshipIcon from '@/assets/relationship.png';
+import lifeIcon from '@/assets/life-and-councelling.png';
+import esteemIcon from '@/assets/esteem.png';
+import anxietyIcon from '@/assets/self-esteem-issue.png';
 
 const services = [
   {
-    icon: iconRelationship,
+    icon: relationshipIcon,
     title: "Relationship Dating",
-    description: "For our patients with impairments resulting from injury affecting the system.",
+    description:
+      "For our patients with impairments resulting from injury affecting the system.",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
   },
   {
-    icon: iconLife,
+    icon: lifeIcon,
     title: "Life and Counseling",
-    description: "For our patients with impairments resulting from injury affecting the system.",
+    description:
+      "For our patients with impairments resulting from injury affecting the system.",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
   },
   {
-    icon: iconEsteem,
+    icon: esteemIcon,
     title: "Best Esteem Counseling",
-    description: "For our patients with impairments resulting from injury affecting the system.",
+    description:
+      "For our patients with impairments resulting from injury affecting the system.",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
   },
   {
-    icon: iconAnxiety,
+    icon: anxietyIcon,
     title: "Self Esteem Issues",
-    description: "For our patients with impairments resulting from injury affecting the system.",
+    description:
+      "For our patients with impairments resulting from injury affecting the system.",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
   },
 ];
 
-const Services = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
+export default function Services() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-          <div className="inline-block mb-4">
-            <span className="text-sm font-medium text-primary tracking-wider uppercase">
-              Our Services
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Comprehensive services care for mind and wellness
-          </h2>
-          <Button variant="outline" className="mt-4">
-            Explore Services
-          </Button>
+    <section id="services" className="py-20 bg-[#FDF9F7] relative overflow-hidden">
+      {/* Floating Accent Circle */}
+      <motion.div
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [0.05, 0.1, 0.05],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Infinity,
+          ease: "linear",
+        }}
+        className="absolute top-1/2 right-0 w-96 h-96 bg-accent rounded-full blur-3xl"
+      />
+
+      <div ref={ref} className="container mx-auto px-4 relative z-10">
+        {/* Section Header */}
+        <div className="flex items-center space-x-7 mb-8">
+          <div className="h-[1.2px] bg-primary w-[50px]" />
+          <span className="text-sm text-primary tracking-wider uppercase">
+            Our Services
+          </span>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <Card 
-              key={index}
-              className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border bg-card"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
+        <div className="flex flex-col md:flex-row items-start justify-between mb-16 gap-6">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-5xl lg:text-[48px] leading-tight max-w-xl"
+            style={{
+              fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+              fontWeight: 400,
+            }}
+          >
+            Comprehensive services care for mind and wellness
+          </motion.h2>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            <Button
+              size="lg"
+              className="rounded-full group bg-transparent hover:bg-primary hover:text-white p-6 text-md border border-primary text-primary"
+              style={{
+                fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                fontWeight: 400,
+              }}
             >
-              <div className="mb-6">
-                <img 
-                  src={service.icon} 
-                  alt={service.title}
-                  className="w-16 h-16 object-contain"
-                />
+              Explore Services
+              <span className="inline-block ml-2 animate-bounce-arrow">→</span>
+            </Button>
+          </motion.div>
+        </div>
+
+        {/* Services List */}
+        <div className="divide-y divide-dashed divide-border">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: index * 0.15, duration: 0.6 }}
+              className="grid grid-cols-1 md:grid-cols-[1fr_4fr_4fr] gap-8 py-8 items-center group"
+            >
+              {/* Icon */}
+              <div className="w-16 h-16 flex-shrink-0">
+                <img src={service.icon} alt={service.title} className="w-full h-full object-contain" style={{filter: "brightness(0) invert(0)"}}/>
+              </div> 
+
+              {/* Title & Description */}
+              <div className="md:w-[100%] ">
+                <h3
+                  className="text-[20px] md:text-[22px] font-thin mb-2"
+                  style={{
+                    fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                  }}
+                >
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-sm">
+                  {service.description}
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground">{service.description}</p>
-            </Card>
+
+              {/* Image */}
+              <motion.div
+                whileHover={{ scale: 1.03 }}
+                transition={{ duration: 0.3 }}
+                className="relative h-36 md:h-28 rounded-3xl overflow-hidden cursor-pointer w-full"
+              >
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-primary/80 group-hover:opacity-0 transition-opacity duration-500" />
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default Services;
+}
