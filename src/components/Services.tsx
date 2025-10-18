@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import relationshipIcon from '@/assets/relationship.png';
 import lifeIcon from '@/assets/life-and-councelling.png';
-import esteemIcon from '@/assets/esteem.png';
+import esteemIcon from '@/assets/Esteem.png';
 import anxietyIcon from '@/assets/self-esteem-issue.png';
 
 const services = [
