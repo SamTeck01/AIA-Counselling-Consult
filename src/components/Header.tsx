@@ -39,8 +39,8 @@ const Header = () => {
             onClick={() => scrollToSection("home")}
           >
             <div className="text-3xl font-bold tracking-tight" style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
-              <span className="text-primary">True</span>
-              <span className="text-foreground">mo</span>
+              <span className="text-primary">AIA</span>
+              <span className="text-foreground"> Counselling</span>
             </div>
           </motion.div>
 

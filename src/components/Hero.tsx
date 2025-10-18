@@ -77,7 +77,7 @@ const Hero = () => {
             className="relative text-center md:absolute md:right-12 md:bottom-12 md:-translate-y-1/2 max-w-xs z-30 space-y-4 md:space-y-6 md:text-right pb-4 px-4 md:px-0"
           >
             <p className="text-white/80 text-xs sm:text-sm leading-relaxed">
-              We offer comprehensive care focusing on our patients’ individual goals and provide a friendly dental home for all your oral healthcare needs.
+              Professional counselling services with over two decades of experience. We empower adolescents, youths and couples through personalized and multi-dimensional counselling, guaranteeing transformative results.
             </p>
             <Button className="bg-white text-[#594A66] hover:bg-white/90 rounded-full px-8 py-4 sm:px-10 sm:py-6 text-sm sm:text-base font-light shadow-lg">
               Book Today

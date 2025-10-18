@@ -105,7 +105,7 @@ const Team = () => {
                 "'Playfair Display', Georgia, 'Times New Roman', serif",
             }}
           >
-            Meets Our Professional Team <br /> Member
+            Meet Our International Network <br /> of Practitioners
           </h2>
         </motion.div>
 

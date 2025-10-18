@@ -16,8 +16,8 @@ const features = [
         <path d="M16 4l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" />
       </svg>
     ),
-    title: "Experienced Professionals",
-    description: "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
+    title: "Root Cause Solutions",
+    description: "We uncover the root causes of intractable issues and treat problems from the root, ensuring effective, enduring and sustainable solutions with comprehensive follow-up services.",
   },
   {
     icon: (
@@ -28,8 +28,8 @@ const features = [
         <path d="M26 20c2 0 4 2 4 4" />
       </svg>
     ),
-    title: "Client Centered Approach",
-    description: "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
+    title: "Personalized Care Model",
+    description: "We understand each individual is unique. Our counselling model helps clients express and empower themselves by focusing on what works for them, with choice of male or female counsellor.",
   },
   {
     icon: (
@@ -37,8 +37,8 @@ const features = [
         <path d="M4 16l8 8 16-16" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    title: "Commitment To Growth",
-    description: "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
+    title: "Professional Excellence",
+    description: "We place immeasurable value on our clients and believe that our professional relationship is the hallmark of the helping relationship. We handle only our core areas of specialization.",
   },
 ];
 
@@ -121,8 +121,7 @@ export default function CaseStudies() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-white/80 mb-16 max-w-2xl text-center"
         >
-          On the other hand we denounce with righteous indignation and dislike men who are
-          so beguiled and demoralized by the charms of pleasure pain.
+          At AIA Counselling Consult, we are a team of certified and registered professionals experienced in counselling, psychotherapy, behaviour modification, human resource development, relationship and mental health.
         </motion.p>
 
         {/* Feature Cards */}

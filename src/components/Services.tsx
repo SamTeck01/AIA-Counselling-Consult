@@ -12,30 +12,30 @@ import anxietyIcon from '@/assets/self-esteem-issue.png';
 const services = [
   {
     icon: relationshipIcon,
-    title: "Relationship Dating",
+    title: "Relationship & Marital Counselling",
     description:
-      "For our patients with impairments resulting from injury affecting the system.",
+      "Expert guidance for couples navigating relationship and marital challenges. Strengthen your bond and build a more fulfilling partnership.",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
   },
   {
     icon: lifeIcon,
-    title: "Life and Counseling",
+    title: "Career & Academic Guidance",
     description:
-      "For our patients with impairments resulting from injury affecting the system.",
+      "Professional support for adolescents and youths facing academic, behaviour, and career-related challenges.",
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
   },
   {
     icon: esteemIcon,
-    title: "Best Esteem Counseling",
+    title: "Behaviour Modification",
     description:
-      "For our patients with impairments resulting from injury affecting the system.",
+      "Specialized therapy for behaviour modification and mental health support with evidence-based approaches.",
     image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
   },
   {
     icon: anxietyIcon,
-    title: "Self Esteem Issues",
+    title: "Individual & Group Therapy",
     description:
-      "For our patients with impairments resulting from injury affecting the system.",
+      "Personalized counselling sessions for individuals, couples, families, and corporate clients both online and in-person.",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
   },
 ];
@@ -80,7 +80,7 @@ export default function Services() {
               fontWeight: 400,
             }}
           >
-            Comprehensive services care for mind and wellness
+            Comprehensive counselling services for mental health and wellness
           </motion.h2>
 
           <motion.div

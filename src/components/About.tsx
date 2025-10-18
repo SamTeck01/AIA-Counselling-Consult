@@ -41,13 +41,13 @@ const About = () => {
             className="space-y-6 relative"
           >   
             <h2 className="text-4xl md:text-5xl lg:text-[48px] leading-tight" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>
-              Our Mission
-              <span className="text-primary"> Supporting your </span>
-              mental health journey
+              Meet Our
+              <span className="text-primary"> Executive Director </span>
+              Dr. Ibraheem Adediran
             </h2>
 
             <p className="text-base text-muted-foreground leading-relaxed">
-              On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the pleasure by those.
+              Dr Ibraheem Adedayo Adediran is a passionate and seasoned Counselling Psychologist of international repute, with over two decades of corporate and private service experience empowering adolescents, youths and couples navigate academic, behaviour, career, relationship and marital challenges, through personalized and multi-dimensional counselling services, guaranteeing transformative results and a more fulfilling life.
             </p>
 
             <div className="space-y-4">
@@ -59,11 +59,11 @@ const About = () => {
               >
                 <div className="flex items-center flex-row space-x-6 p-2">
                   <img src={Physiotherapy} alt='Physiotherapy' />
-                  <h3 className="text-[22px] font-thin mb-1">Expert Physiotherapist</h3>
+                  <h3 className="text-[22px] font-thin mb-1">International Network</h3>
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm w-[67%]">
-                    Licensed professionals with years of experience in various therapeutic approaches.
+                    Network of international practitioners from different continents making counselling accessible through virtual and physical sessions.
                   </p>
                 </div>
               </motion.div>
@@ -76,11 +76,11 @@ const About = () => {
               >
                 <div className="flex items-center flex-row space-x-6 p-2">
                   <img src={Physiotherapy} alt='Physiotherapy' />
-                  <h3 className="text-[22px] font-thin mb-1">Personalized Care</h3>
+                  <h3 className="text-[22px] font-thin mb-1">Result-Oriented Approach</h3>
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm w-[67%]">
-                    Customized treatment plans designed to address your specific goals and challenges.
+                    Pragmatic counselling approach uncovering root causes of issues, ensuring effective, enduring and sustainable solutions.
                   </p>
                 </div>
               </motion.div>
@@ -104,7 +104,7 @@ const About = () => {
                   className="absolute -bottom-6 right-0 bg-primary/10 p-6 h-[220px] rounded-t-full flexCenter"
                 >
                   <div className="flex items-center gap-4 flex-col">
-                    <div className="text-[120px] leading-[0.8] tracking-tighter" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>10+</div>
+                    <div className="text-[120px] leading-[0.8] tracking-tighter" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>20+</div>
                     <div className="font-medium text-muted-foreground text-center">Years of<br/> Experience</div>
                   </div>
                 </motion.div>

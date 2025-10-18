@@ -5,24 +5,24 @@ import { Plus, Minus, Phone } from "lucide-react";
 
 const faqs = [
   {
-    question: "What is mental therapy, and how can it help me?",
-    answer: "There but the majority have in some form or randomised words which don't look even slightly believable. If you are going to use a passage of you need to text.",
+    question: "What happens in the first consultation session?",
+    answer: "The first session is a Consultation/Diagnostic Session where the Counsellor/Therapist does case profiling and diagnoses the nature of the challenge, identifies clearer counselling/therapy goals, treatment plans and number of sessions required. The consultation fee depends on nature of challenge, age of clients, mode of therapy (Online, Office or Outdoor, individual or Group), and location.",
   },
   {
-    question: "What if I don't feel a connection with my therapist?",
-    answer: "There but the majority have in some form or randomised words which don't look even slightly believable. If you are going to use a passage of you need to text.",
+    question: "What types of counselling sessions do you offer?",
+    answer: "We offer Regular Sessions (scheduled appointments based on identified needs and goals) and Irregular Sessions (as needed and convenient). Sessions can be conducted online (virtual), in-person at our office, or outdoor locations. We provide individual, couple, family, and corporate counselling sessions. Standard session time is between 40 minutes and 1 hour.",
   },
   {
-    question: "What should I expect in my first session?",
-    answer: "There but the majority have in some form or randomised words which don't look even slightly believable. If you are going to use a passage of you need to text.",
+    question: "What is your approach to counselling?",
+    answer: "Ours is a result-oriented pragmatic counselling approach. We engage in an inclusive counselling style to problem solving with the unique purpose of uncovering the root causes of intractable issues. We treat the problem from the root and ensure an effective, enduring and sustainable solution with follow-up services, notwithstanding the age and status of our client.",
   },
   {
-    question: "Will therapy be covered by my insurance?",
-    answer: "There but the majority have in some form or randomised words which don't look even slightly believable. If you are going to use a passage of you need to text.",
+    question: "What is your cancellation and appointment policy?",
+    answer: "We appreciate keeping scheduled appointments. Please notify us 24 hours (1 day) in advance if you need to cancel. In case of missed appointment without due notification, the counsellee shall forfeit the fee for the session where payment had already been made or could be obligated to pay 50% cost of session for no-show. Counselling can be terminated upon request by the counsellee at any stage.",
   },
   {
-    question: "How long does therapy usually take?",
-    answer: "There but the majority have in some form or randomised words which don't look even slightly believable. If you are going to use a passage of you need to text.",
+    question: "How do you ensure confidentiality?",
+    answer: "All interactions during counselling/therapy services, including scheduling of appointments, the content of your sessions, progress in counselling/therapy, and your records are completely confidential. No record of counselling/therapy is contained in any academic, educational, or job placement file. All your information is secured from third party access.",
   },
 ];
 

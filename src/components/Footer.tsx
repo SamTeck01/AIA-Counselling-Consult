@@ -22,7 +22,7 @@ const Footer = () => {
                   <div className="w-8 h-8 bg-primary rounded-full" />
                 </div>
                 <span className="text-white text-2xl font-light" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-                  Truemo
+                  AIA Counselling
                 </span>
               </motion.div>
 
@@ -91,10 +91,10 @@ const Footer = () => {
             >
               <h3 className="text-white text-base font-normal mb-6">Contact</h3>
               <ul className="space-y-4">
-                <li className="text-white/60 text-sm">Madison Avenue 21c</li>
-                <li className="text-white/60 text-sm">00 411 22 0123</li>
-                <li className="text-white/60 text-sm">00 411 22 0134</li>
-                <li><a href="mailto:support@truemo@gmail.com" className="text-white/60 hover:text-white transition-colors text-sm">support@truemo@gmail.com</a></li>
+                <li className="text-white/60 text-sm">Professional Counselling Services</li>
+                <li className="text-white/60 text-sm">Virtual & Physical Sessions</li>
+                <li className="text-white/60 text-sm">International Network</li>
+                <li><a href="mailto:info@aiacounselling.com" className="text-white/60 hover:text-white transition-colors text-sm">info@aiacounselling.com</a></li>
               </ul>
             </motion.div>
           </div>
@@ -135,13 +135,13 @@ const Footer = () => {
 
             {/* Copyright */}
             <p className="text-white/40 text-sm">
-              Copyright © 2025 <span className="text-white/60">Truemo</span>, All Rights Reserved.
+              Copyright © 2025 <span className="text-white/60">AIA Counselling Consult</span>, All Rights Reserved.
             </p>
           </div>
 
           {/* Large Truemo Text Background */}
           <div className="absolute bottom-0 right-12 text-[180px] font-light text-white/5 leading-none pointer-events-none" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-            Truemo
+            AIA
           </div>
         </div>
       </div>

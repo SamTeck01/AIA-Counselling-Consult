@@ -9,20 +9,20 @@ import AOS from "aos";
 
 const faqs = [
   {
-    question: "What is mental therapy, and how can it help me?",
-    answer: "There but the majority have in some form or randomised words which don't look even slightly believable. If you are going to use a passage of you need to of text.",
+    question: "What is counselling/therapy and how can it help me?",
+    answer: "Counselling/therapy is a confidential process designed to help you address your concerns, have a better understanding of yourself as a unique individual, and learn effective personal and interpersonal coping strategies. It involves an intentional and systematically progressive helping-relationship between you and a trained counsellor.",
   },
   {
-    question: "What if I don't feel a connection with my therapist?",
-    answer: "It's important to feel comfortable with your therapist. We offer initial consultations to help you find the right match for your needs.",
+    question: "How is confidentiality maintained?",
+    answer: "All interactions during counselling/therapy services, including scheduling of appointments, the content of your sessions, progress in counselling/therapy, and your records are completely confidential. No record of counselling/therapy is contained in any academic, educational, or job placement file. All your information is secured from third party access.",
   },
   {
-    question: "How long does therapy typically last?",
-    answer: "The duration varies depending on individual needs and goals. Some clients benefit from short-term therapy while others prefer ongoing support.",
+    question: "What types of sessions are available?",
+    answer: "We offer Regular Sessions (scheduled appointments based on identified needs and goals) and Irregular Sessions (as needed and convenient). Sessions can be conducted online (virtual), in-person at our office, or outdoor locations. We provide individual, couple, family, and corporate counselling sessions. Standard session time is between 40 minutes and 1 hour.",
   },
   {
-    question: "Is online therapy as effective as in-person sessions?",
-    answer: "Research shows that online therapy can be just as effective as in-person sessions for many types of mental health concerns.",
+    question: "What is your cancellation policy?",
+    answer: "We appreciate keeping scheduled appointments. Please notify us 24 hours (1 day) in advance if you need to cancel. In case of missed appointment without due notification, you may forfeit the fee for the session where payment had already been made or could be obligated to pay 50% cost of session for no-show.",
   },
 ];
 
