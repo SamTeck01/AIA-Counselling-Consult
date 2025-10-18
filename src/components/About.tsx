@@ -32,7 +32,7 @@ const About = () => {
           </span>
         </div>
 
-        <div className="flex lg:flex-row gap-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-end">
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -90,25 +90,29 @@ const About = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: 0.7, duration: 0.6 }}
-              className="flex flex-row justify-between"
+              className="flex md:items-start items-center gap-4 flex-col md:flex-row w-full"
             >
-              <Button size="lg" className="mt-4 rounded-full group bg-primary hover:bg-primary/90 p-8 text-md" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}} >
+              <Button size="lg" className="md:flex hidden mt-4 rounded-full group bg-primary hover:bg-primary/90 p-8 text-md w-full md:w-fit" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}} >
                 Learn More
               </Button>
 
-              <div className="scale-75 md:scale-100">
+              <div className="w-full">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                   transition={{ delay: 0.5, duration: 0.5 }}
-                  className="absolute -bottom-6 right-0 bg-primary/10 p-6 h-[220px] rounded-t-full flexCenter"
+                  className="relative md:absolute md:-bottom-6 md:right-0 bg-primary/10 p-6 md:h-[220px] w-full md:w-fit md:rounded-t-full rounded-3xl flexCenter"
                 >
                   <div className="flex items-center gap-4 flex-col">
-                    <div className="text-[120px] leading-[0.8] tracking-tighter" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>20+</div>
+                    <div className="text-[80px] md:text-[120px] leading-[0.8] tracking-tighter" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>20+</div>
                     <div className="font-medium text-muted-foreground text-center">Years of<br/> Experience</div>
                   </div>
                 </motion.div>
-              </div>  
+              </div>
+
+              <Button size="lg" className="flex md:hidden mt-4 rounded-full group bg-primary hover:bg-primary/90 p-8 text-md w-full md:w-fit" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}} >
+                Learn More
+              </Button>
             </motion.div>
           </motion.div>
 
@@ -116,7 +120,7 @@ const About = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8 }}
-            className="relative lg:w-[100%] hidden md:block"
+            className="relative lg:w-[100%] hidden lg:block"
           >
             <motion.div
               whileHover={{ scale: 1.02 }}

@@ -36,7 +36,7 @@ const Pricing = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-background container">
+    <section id="faq" className="py-20 bg-background">
       <div className="container mx-auto px-4" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 max-w-7xl mx-auto">
           {/* Left Column - Header & Contact Card */}

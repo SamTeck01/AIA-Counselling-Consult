@@ -27,7 +27,7 @@ const Blog = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="blog" className="py-20 bg-background relative overflow-hidden container">
+    <section id="blog" className="py-20 bg-background relative overflow-hidden">
       {/* Floating Accent Circle */}
       <motion.div
         animate={{
