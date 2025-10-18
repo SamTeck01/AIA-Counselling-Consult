@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer id="contact" className="py-8 bg-background">
       <div className="container mx-auto px-4">
-        <div className="bg-primary rounded-[50px] px-12 py-16 relative overflow-hidden">
+        <div className="bg-primary rounded-[50px] px-4 sm:px-8 md:px-12 py-16 relative overflow-hidden">
           {/* Content Grid */}
           <div className="grid lg:grid-cols-[1fr_auto_auto_auto] gap-16 mb-20 relative z-10">
             {/* Left Column - Logo & Newsletter */}
