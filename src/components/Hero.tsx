@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroPsychologist from "@/assets/truemo-woman.png";
+import heroPsychologist from "@/assets/black-truemo.png";
 import quote from '@/assets/quote.png';
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#594A66] via-[#6A5A76] to-[#594A66] overflow-hidden mt-[82px] rounded-[20px] md:rounded-[38px] w-full"
+      className="relative min-h-screen flex justify-center bg-gradient-to-br from-[#594A66] via-[#6A5A76] to-[#594A66] overflow-hidden mt-[82px] rounded-[20px] md:rounded-[38px] w-full"
     >
       {/* Decorative Background Circles with Animations */}
       <motion.div
@@ -30,7 +30,7 @@ const Hero = () => {
       />
 
       <div className="container relative mx-auto px-4 sm:px-6 max-w-7xl">
-        <div className="relative flex items-center space-y-4 justify-end flex-col min-h-[600px] sm:min-h-[700px] md:min-h-[880px]">
+        <div className="relative flex space-y-4 justify-end items-center flex-col h-screen min-h-[600px] sm:min-h-[700px] md:min-h-[880px] pb-8 md:pb-2">
           {/* Massive Background Text */}
           <motion.div
             initial={{ opacity: 0 }}

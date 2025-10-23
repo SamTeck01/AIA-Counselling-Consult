@@ -92,12 +92,20 @@ const Blog = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              className="grid grid-cols-1 md:grid-cols-[1fr_6fr_500px] gap-14 py-12 items-start group"
+              className="grid grid-cols-1 md:grid-cols-[1fr_6fr_500px] gap-4 md:gap-14 py-12 items-start group"
             >
-              {/* Number */}
-              <div className="flex-shrink-0">
-                <span className="text-foreground/30 text-xl font-light">
+              {/* Number and title that show on mobile*/}
+              <div className="flex-shrink-0 flex flex-row gap-2">
+                <span className="text-foreground/30 text-xl font-light h-fit">
                   ({String(index + 1).padStart(2, "0")})
+                </span>
+                <span
+                  className="text-[24px] font-light leading-tight inline-flex md:hidden"
+                  style={{
+                    fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                  }}
+                >
+                  {post.title}
                 </span>
               </div>
 
@@ -113,14 +121,16 @@ const Blog = () => {
                     </span>
                   ))}
                 </div>
+
                 <h3
-                  className="text-[24px] font-light leading-tight"
+                  className="text-[24px] font-light leading-tight hidden md:block"
                   style={{
                     fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
                   }}
                 >
                   {post.title}
                 </h3>
+
                 <button className="text-sm text-foreground/60 hover:text-primary transition-colors border border-foreground/20 hover:border-primary rounded-full px-6 py-2.5">
                   Read More
                 </button>

@@ -38,7 +38,7 @@ const Header = () => {
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
-            <div className="text-3xl font-bold tracking-tight" style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
+            <div className="text-4xl font-light tracking-tight" style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
               <span className="text-primary">AIA</span>
               <span className="text-foreground"> Counselling</span>
             </div>

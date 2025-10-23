@@ -84,7 +84,7 @@ const SubHeroCard = ({ title, subtitle, icon, highlight }) => {
           {/* ===== CTA Button ===== */}
           <button
             aria-label={`Learn more about ${title}`}
-            className="flex items-center gap-3 text-sm font-medium transition border duration-200 py-1.5 px-3 rounded-3xl"
+            className="flex items-center gap-3 text-sm font-medium transition border duration-200 py-1.5 px-3 rounded-3xl mt-2"
             // style={{border: '1px solid black'}}
           >
             <span 

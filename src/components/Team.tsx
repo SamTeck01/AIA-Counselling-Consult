@@ -7,8 +7,7 @@ const teamMembers = [
   {
     name: "Meghan Bennet",
     role: "Psychiatry",
-    image:
-      "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=800&auto=format&fit=crop",
+    image: "/src/assets/profile1.jpg",
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -18,8 +17,7 @@ const teamMembers = [
   {
     name: "Mikey Kenny",
     role: "Psychiatrist",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
+    image: "/src/assets/profile 2.jpg",
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -29,8 +27,7 @@ const teamMembers = [
   {
     name: "Lidia Huynh",
     role: "Therapy Expert",
-    image:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=800&auto=format&fit=crop",
+    image: "/src/assets/profile 3.jpg",
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -40,8 +37,7 @@ const teamMembers = [
   {
     name: "Zackery Mills",
     role: "Managing Director",
-    image:
-      "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?q=80&w=800&auto=format&fit=crop",
+    image: "/src/assets/profile 4.jpg",
     socials: {
       twitter: "#",
       linkedin: "#",

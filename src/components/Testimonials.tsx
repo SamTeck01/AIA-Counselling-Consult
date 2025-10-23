@@ -10,42 +10,42 @@ const testimonials = [
     role: "@staking",
     content:
       "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
-    avatar: "https://i.pravatar.cc/150?img=1",
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=faces",
   },
   {
     name: "Clark Jhonso",
     role: "@staking",
     content:
       "Conversely, we condemn with firm conviction and disfavor those who are misled and corrupted by the allure of comfort and.",
-    avatar: "https://i.pravatar.cc/150?img=12",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
   },
   {
     name: "Mia Lan",
     role: "@staking",
     content:
       "On the contrary, we firmly reject and disapprove of those who let themselves be deceived and weakened by temptations of desire and ease.",
-    avatar: "https://i.pravatar.cc/150?img=5",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces",
   },
   {
     name: "Clare Bamford",
     role: "@staking",
     content:
       "On the contrary, we firmly reject and disapprove of those who let themselves be deceived and weakened by temptations of desire and ease.",
-    avatar: "https://i.pravatar.cc/150?img=1",
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=faces",
   },
   {
     name: "Clark Jhonso",
     role: "@staking",
     content:
       "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
-    avatar: "https://i.pravatar.cc/150?img=12",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
   },
   {
     name: "Mia Lan",
     role: "@staking",
     content:
       "Conversely, we condemn with firm conviction and disfavor those who are misled and corrupted by the allure of comfort and.",
-    avatar: "https://i.pravatar.cc/150?img=5",
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces",
   },
 ];
 
