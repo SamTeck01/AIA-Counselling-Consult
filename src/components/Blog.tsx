@@ -3,12 +3,14 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import blackWomanSmiling from "@/assets/black-woman-smiling.jpg";
+import chocolateWomanSmiling from "@/assets/chocolate-woman-smiling.jpg";
 
 const blogPosts = [
   {
     title: "Building Resilience Coping Strategies for life's Challenges",
     tags: ["INCREASE POSITIVITY", "SEPTEMBER 15,25"],
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
+    image: chocolateWomanSmiling,
   },
   {
     title: "Cultivating Inner Strength: Practical Tools to Overcome Life's Obstacles",
@@ -18,7 +20,7 @@ const blogPosts = [
   {
     title: "Developing Emotional Balance: Effective Ways to Navigate Everyday Stress",
     tags: ["INCREASE POSITIVITY", "SEPTEMBER 15,25"],
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop",
+    image: blackWomanSmiling,
   },
 ];
 

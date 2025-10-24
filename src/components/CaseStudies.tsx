@@ -1,11 +1,13 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
+import caseStudy1 from "../assets/social anxiety.jpg";
+
 
 // 📝 Sample Case Study data
 const caseStudies = [
   {
     title: "Beyond Social Fear",
-    image: "https://images.unsplash.com/photo-1607990281513-2c110a25bd8a?auto=format&fit=crop&w=800&q=80",
+    image: caseStudy1,
   },
   {
     title: "Social Anxiety Breakthrough",

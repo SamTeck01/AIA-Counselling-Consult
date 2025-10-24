@@ -2,12 +2,16 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { LinkedinIcon, Mail, Twitter } from "lucide-react";
+import profile1 from '../assets/profile1.jpg'
+import profile2 from '../assets/profile 2.jpg'
+import profile3 from '../assets/profile 3.jpg'
+import profile4 from '../assets/profile 4.jpg'
 
 const teamMembers = [
   {
     name: "Meghan Bennet",
     role: "Psychiatry",
-    image: "/src/assets/profile1.jpg",
+    image: profile1,
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -17,7 +21,7 @@ const teamMembers = [
   {
     name: "Mikey Kenny",
     role: "Psychiatrist",
-    image: "/src/assets/profile 2.jpg",
+    image: profile2,
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -27,7 +31,7 @@ const teamMembers = [
   {
     name: "Lidia Huynh",
     role: "Therapy Expert",
-    image: "/src/assets/profile 3.jpg",
+    image: profile3,
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -37,7 +41,7 @@ const teamMembers = [
   {
     name: "Zackery Mills",
     role: "Managing Director",
-    image: "/src/assets/profile 4.jpg",
+    image: profile4,
     socials: {
       twitter: "#",
       linkedin: "#",

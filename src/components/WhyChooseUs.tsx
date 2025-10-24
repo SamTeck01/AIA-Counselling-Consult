@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import chocolateWomanSmiling from "@/assets/chocolate-woman-smiling.jpg";
 
 const stats = [
   { value: "25+", label: "Years of Experience" },
@@ -57,7 +58,7 @@ export default function CaseStudies() {
           className="relative rounded-[38px] overflow-hidden mb-16 h-[450px] w-full"
         >
           <img
-            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=80"
+            src={chocolateWomanSmiling}
             alt="Therapy session"
             className="w-full h-full object-cover"
           />

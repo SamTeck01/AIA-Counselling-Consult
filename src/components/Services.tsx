@@ -8,6 +8,8 @@ import relationshipIcon from '@/assets/relationship.png';
 import lifeIcon from '@/assets/life-and-councelling.png';
 import esteemIcon from '@/assets/Esteem.png';
 import anxietyIcon from '@/assets/self-esteem-issue.png';
+import chocolateWomanSmiling from '@/assets/chocolate-woman-smiling.jpg';
+import blackWomanSmiling from '@/assets/black-woman-smiling.jpg';
 
 const services = [
   {
@@ -15,14 +17,14 @@ const services = [
     title: "Relationship & Marital Counselling",
     description:
       "Expert guidance for couples navigating relationship and marital challenges. Strengthen your bond and build a more fulfilling partnership.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    image: blackWomanSmiling,
   },
   {
     icon: lifeIcon,
     title: "Career & Academic Guidance",
     description:
       "Professional support for adolescents and youths facing academic, behaviour, and career-related challenges.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    image: chocolateWomanSmiling,
   },
   {
     icon: esteemIcon,
@@ -36,7 +38,7 @@ const services = [
     title: "Individual & Group Therapy",
     description:
       "Personalized counselling sessions for individuals, couples, families, and corporate clients both online and in-person.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+    image: blackWomanSmiling,
   },
 ];
 
