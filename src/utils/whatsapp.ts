@@ -1,6 +1,6 @@
 // WhatsApp utility function
 // Replace with your actual WhatsApp number (include country code without + or spaces)
-const WHATSAPP_NUMBER = "2348012345678"; // Replace with actual number
+const WHATSAPP_NUMBER = "2348136567766"; // Replace with actual number
 
 export const openWhatsApp = (message: string) => {
   const encodedMessage = encodeURIComponent(message);
