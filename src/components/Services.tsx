@@ -85,23 +85,6 @@ export default function Services() {
             Comprehensive counselling services for mental health and wellness
           </motion.h2>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.6 }}
-          >
-            <Button
-              size="lg"
-              className="rounded-full group bg-transparent hover:bg-primary hover:text-white p-6 text-md border border-primary text-primary"
-              style={{
-                fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
-                fontWeight: 400,
-              }}
-            >
-              Explore Services
-              <span className="inline-block ml-2 animate-bounce-arrow">→</span>
-            </Button>
-          </motion.div>
         </div>
 
         {/* Services List */}

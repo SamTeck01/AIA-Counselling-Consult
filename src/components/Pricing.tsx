@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Plus, Minus, Phone } from "lucide-react";
+import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 
 const faqs = [
   {
@@ -98,15 +99,15 @@ const Pricing = () => {
                 Still have you any question?
               </h3>
 
-              <a
-                href="tel:+0079000665"
+              <button
+                onClick={() => openWhatsApp(WHATSAPP_MESSAGES.GENERAL_INQUIRY)}
                 className="inline-flex items-center gap-3 text-white hover:opacity-80 transition-opacity"
               >
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-lg font-medium">+0079 000 665</span>
-              </a>
+                <span className="text-lg font-medium">Contact Us</span>
+              </button>
             </motion.div>
           </motion.div>
 

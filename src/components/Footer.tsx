@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { Send, Instagram, Linkedin, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <footer id="contact" className="py-8 bg-background">
       <div className="container mx-auto px-4">
@@ -57,14 +63,12 @@ const Footer = () => {
             >
               <h3 className="text-white text-base font-normal mb-6">Studio</h3>
               <ul className="space-y-4">
-                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Doctors</a></li>
-                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Testimonials</a></li>
-                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Case Studies</a></li>
-                <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Pricing</a></li>
+                <li onClick={() => scrollToSection('team')}><a className="text-white/60 hover:text-white transition-colors text-sm cursor-pointer">Doctors</a></li>
+                <li onClick={() => scrollToSection('studies')}> <a className="text-white/60 hover:text-white transition-colors text-sm cursor-pointer">Testimonials</a></li>
               </ul>
             </motion.div>
 
-            {/* Navigation Column */}
+            {/* Navigation Column 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +83,7 @@ const Footer = () => {
                 <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Our Blog</a></li>
                 <li><a href="#" className="text-white/60 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
               </ul>
-            </motion.div>
+            </motion.div>*/}
 
             {/* Contact Column */}
             <motion.div

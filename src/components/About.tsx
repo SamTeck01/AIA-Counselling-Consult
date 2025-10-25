@@ -43,7 +43,7 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl lg:text-[48px] leading-tight" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>
               Meet Our
               <span className="text-primary"> Executive Director </span>
-              Dr. Ibraheem Adediran
+              Dr. Ibraheem Adedayo Adediran
             </h2>
 
             <p className="text-base text-muted-foreground leading-relaxed">
@@ -63,7 +63,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-muted-foreground text-sm w-[67%]">
-                    Network of international practitioners from different continents making counselling accessible through virtual and physical sessions.
+                    Network of international practitioners from different countries making counselling accessible through virtual and physical sessions.
                   </p>
                 </div>
               </motion.div>
@@ -92,10 +92,6 @@ const About = () => {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="flex md:items-start items-center gap-4 flex-col md:flex-row w-full"
             >
-              <Button size="lg" className="md:flex hidden mt-4 rounded-full group bg-primary hover:bg-primary/90 p-8 text-md w-full md:w-fit" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}} >
-                Learn More
-              </Button>
-
               <div className="w-full">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -104,7 +100,7 @@ const About = () => {
                   className="relative md:absolute md:-bottom-6 md:right-0 bg-primary/10 p-6 md:h-[220px] w-full md:w-fit md:rounded-t-full rounded-3xl flexCenter"
                 >
                   <div className="flex items-center gap-4 flex-col">
-                    <div className="text-[80px] md:text-[120px] leading-[0.8] tracking-tighter" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>20+</div>
+                    <div className="text-[80px] md:text-[120px] leading-[1] tracking-tighter" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>25+</div>
                     <div className="font-medium text-muted-foreground text-center">Years of<br/> Experience</div>
                   </div>
                 </motion.div>

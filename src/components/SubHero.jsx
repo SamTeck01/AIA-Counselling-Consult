@@ -7,6 +7,7 @@ import { MoveRight } from "lucide-react";
 import PhysioTherapyIcon from "@/assets/PhysioTheraphyIcon.svg";
 import CounsellingIcon from "@/assets/CounsellingIcon.svg";
 import BookIcon from "@/assets/BookIcon.svg";
+import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 
 /* ===============================
    ✨ Animation Variants
@@ -32,7 +33,7 @@ const cardEntry = {
 /* ===============================
    ✨ Card Component
 ================================ */
-const SubHeroCard = ({ title, subtitle, icon, highlight }) => {
+const SubHeroCard = ({ title, subtitle, icon, highlight, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -43,6 +44,7 @@ const SubHeroCard = ({ title, subtitle, icon, highlight }) => {
       viewport={{ once: true, amount: 0.28 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
       className={`relative overflow-hidden p-8 flex flex-col h-full cursor-pointer`}
       style={{
         borderRadius: '2.5rem',
@@ -127,6 +129,7 @@ export default function SubHero() {
         "First session is free. Start with a friendly, confidential session to see how we can help.",
       icon: BookIcon,
       highlight: false,
+      onClick: () => openWhatsApp(WHATSAPP_MESSAGES.BOOK_SESSION),
     },
   ];
 
@@ -147,6 +150,7 @@ export default function SubHero() {
               subtitle={c.subtitle}
               icon={c.icon}
               highlight={c.highlight}
+              onClick={c.onClick}
             />
           ))}
         </motion.div>

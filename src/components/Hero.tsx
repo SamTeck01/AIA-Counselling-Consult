@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import heroPsychologist from "@/assets/black-truemo.png";
 import quote from '@/assets/quote.png';
+import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 
 const Hero = () => {
   return (
@@ -79,7 +80,10 @@ const Hero = () => {
             <p className="text-white/80 text-xs sm:text-sm leading-relaxed">
               Professional counselling services with over two decades of experience. We empower adolescents, youths and couples through personalized and multi-dimensional counselling, guaranteeing transformative results.
             </p>
-            <Button className="bg-white text-[#594A66] hover:bg-white/90 rounded-full px-8 py-4 sm:px-10 sm:py-6 text-sm sm:text-base font-light shadow-lg">
+            <Button 
+              onClick={() => openWhatsApp(WHATSAPP_MESSAGES.BOOK_TODAY)}
+              className="bg-white text-[#594A66] hover:bg-white/90 rounded-full px-8 py-4 sm:px-10 sm:py-6 text-sm sm:text-base font-light shadow-lg"
+            >
               Book Today
             </Button>
           </motion.div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,17 +31,18 @@ const Header = () => {
       } `}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex justify-between  lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-20 gap-4">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="flex items-center gap-2 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer justify-start"
             onClick={() => scrollToSection("home")}
           >
-            <div className="text-4xl font-light tracking-tight" style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
+            <div className="text-4xl font-light tracking-tight flex flex-row space-x-2 h-fit " style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
               <span className="text-primary">AIA</span>
-              <span className="text-foreground"> Counselling</span>
+              <span className="hidden md:block text-foreground"> Counselling</span>
+              <span className=" text-primary"> Consult</span>
             </div>
           </motion.div>
 
@@ -61,14 +63,14 @@ const Header = () => {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 justify-end">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
             >
               <Button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => openWhatsApp(WHATSAPP_MESSAGES.LETS_TALK)}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 hidden lg:flex"
               >
                 Let's Talk
@@ -107,10 +109,9 @@ const Header = () => {
                 </button>
               ))}
               <Button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => openWhatsApp(WHATSAPP_MESSAGES.LETS_TALK)}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full w-full mt-2"
                 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
-
               >
                 Let's Talk
               </Button>

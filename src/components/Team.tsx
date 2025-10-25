@@ -80,7 +80,7 @@ const Team = () => {
   };
 
   return (
-    <section className="mx-[2%] py-16 bg-primary relative overflow-hidden rounded-[38px]">
+    <section id="team" className="mx-[2%] py-16 bg-primary relative overflow-hidden rounded-[38px]">
       <div
         ref={ref}
         className="max-w-7xl mx-auto px-4"

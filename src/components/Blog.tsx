@@ -66,24 +66,6 @@ const Blog = () => {
           >
             Guidance and insights for Mental Wellness Journey
           </motion.h2>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.3, duration: 0.6 }}
-          >
-            <Button
-              size="lg"
-              className="rounded-full group bg-primary hover:bg-primary/90 text-white p-6 text-md"
-              style={{
-                fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
-                fontWeight: 400,
-              }}
-            >
-              See All Articles
-              <span className="inline-block ml-2 animate-bounce-arrow">→</span>
-            </Button>
-          </motion.div>
         </div>
 
         {/* Blog List */}
@@ -132,10 +114,6 @@ const Blog = () => {
                 >
                   {post.title}
                 </h3>
-
-                <button className="text-sm text-foreground/60 hover:text-primary transition-colors border border-foreground/20 hover:border-primary rounded-full px-6 py-2.5">
-                  Read More
-                </button>
               </div>
 
               {/* Image */}
