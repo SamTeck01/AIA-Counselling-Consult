@@ -24,11 +24,13 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="flex items-center gap-3"
               >
-                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                  <div className="w-8 h-8 bg-primary rounded-full" />
-                </div>
+                <img 
+                  src="/aia-logo-white.svg" 
+                  alt="AIA Counselling Consult" 
+                  className="w-12 h-12 object-contain"
+                />
                 <span className="text-white text-2xl font-light" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
-                  AIA Counselling
+                  AIA Counselling Consult
                 </span>
               </motion.div>
 
@@ -98,7 +100,7 @@ const Footer = () => {
                 <li className="text-white/60 text-sm">Professional Counselling Services</li>
                 <li className="text-white/60 text-sm">Virtual & Physical Sessions</li>
                 <li className="text-white/60 text-sm">International Network</li>
-                <li><a href="mailto:info@aiacounselling.com" className="text-white/60 hover:text-white transition-colors text-sm">info@aiacounselling.com</a></li>
+                <li><a href="mailto:ibcounsellor@yahoo.com" className="text-white/60 hover:text-white transition-colors text-sm">ibcounsellor@yahoo.com</a></li>
               </ul>
             </motion.div>
           </div>

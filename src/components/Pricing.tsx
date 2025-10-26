@@ -100,7 +100,7 @@ const Pricing = () => {
               </h3>
 
               <button
-                onClick={() => openWhatsApp(WHATSAPP_MESSAGES.GENERAL_INQUIRY)}
+                onClick={() => openWhatsApp(WHATSAPP_MESSAGES.GENERAL_INQUIRY, true)}
                 className="inline-flex items-center gap-3 text-white hover:opacity-80 transition-opacity"
               >
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
