@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex justify-center bg-gradient-to-br from-[#594A66] via-[#6A5A76] to-[#594A66] overflow-hidden mt-[82px] rounded-[20px] md:rounded-[38px] w-full"
+      className="relative min-h-screen max-h-4xl flex justify-center bg-gradient-to-br from-[#594A66] via-[#6A5A76] to-[#594A66] overflow-hidden mt-[82px] rounded-[20px] md:rounded-[38px] w-full"
     >
       {/* Decorative Background Circles with Animations */}
       <motion.div
