@@ -26,7 +26,7 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 w-full ${
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 w-full ${
         isScrolled ? "bg-white/80 backdrop-blur-md shadow-lg" : "bg-background backdrop-blur-md"
       } `}
     >
@@ -47,7 +47,7 @@ const Header = () => {
           </motion.div>
 
           <nav className="hidden lg:flex items-center gap-8">
-            {["Home", "About", "Services", "Studies", "Blog"].map((item, index) => (
+            {["Home", "About", "Services", "Studies", "Contact"].map((item, index) => (
               <motion.button
                 key={item}
                 initial={{ opacity: 0, y: -20 }}
@@ -98,7 +98,7 @@ const Header = () => {
             className="lg:hidden border-t border-border/50"
           >
             <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
-              {["Home", "About", "Services", "Studies", "Blog"].map((item) => (
+              {["Home", "About", "Services", "Studies", "Contact"].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}

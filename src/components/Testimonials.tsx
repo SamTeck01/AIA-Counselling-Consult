@@ -6,46 +6,46 @@ import { Play, Pause } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Clare Bamford",
-    role: "@staking",
+    name: "Chidera",
+    role: "15 years old",
     content:
-      "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
+      "Before my counselling sessions, I used to bottle up my feelings and get angry over everything. Talking with my counsellor helped me understand my emotions and express them better. I've learned to pause, breathe, and respond instead of react. I'm now more confident and happier with myself.",
     avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=faces",
   },
   {
-    name: "Clark Jhonso",
-    role: "@staking",
+    name: "Mrs. Okonkwo",
+    role: "Parent",
     content:
-      "Conversely, we condemn with firm conviction and disfavor those who are misled and corrupted by the allure of comfort and.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
-  },
-  {
-    name: "Mia Lan",
-    role: "@staking",
-    content:
-      "On the contrary, we firmly reject and disapprove of those who let themselves be deceived and weakened by temptations of desire and ease.",
+      "I can't thank you enough for what you've done for my daughter. She was struggling with self-esteem and anger outbursts, but through counselling, she has become calmer and more confident. She now opens up to me and communicates better. You've truly made a difference in our home.",
     avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces",
   },
   {
-    name: "Clare Bamford",
-    role: "@staking",
+    name: "Mr. Adeyemi",
+    role: "Class Teacher",
     content:
-      "On the contrary, we firmly reject and disapprove of those who let themselves be deceived and weakened by temptations of desire and ease.",
+      "The counselling sessions brought so much positive change among our students. Many of them are now more focused, respectful, and emotionally aware. The guidance given has not only improved their academics but also their attitude toward learning and life.",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
+  },
+  {
+    name: "Grace",
+    role: "23 years old",
+    content:
+      "Counselling helped me heal from experiences I didn't even realize were holding me back. I learned to let go of guilt, set healthy boundaries, and rediscover my sense of purpose. I'm grateful for the safe and non-judgmental space that helped me grow emotionally and spiritually.",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces",
+  },
+  {
+    name: "Mr. Hassan",
+    role: "Parent",
+    content:
+      "My son was always withdrawn and easily distracted, but after his counselling sessions, he's become more expressive and attentive. The progress has been amazing, and I've learned a lot as a parent through the feedback sessions. This service is truly life-changing.",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
+  },
+  {
+    name: "Chidera",
+    role: "15 years old",
+    content:
+      "Before my counselling sessions, I used to bottle up my feelings and get angry over everything. Talking with my counsellor helped me understand my emotions and express them better. I've learned to pause, breathe, and respond instead of react. I'm now more confident and happier with myself.",
     avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=faces",
-  },
-  {
-    name: "Clark Jhonso",
-    role: "@staking",
-    content:
-      "On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure pain.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
-  },
-  {
-    name: "Mia Lan",
-    role: "@staking",
-    content:
-      "Conversely, we condemn with firm conviction and disfavor those who are misled and corrupted by the allure of comfort and.",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces",
   },
 ];
 

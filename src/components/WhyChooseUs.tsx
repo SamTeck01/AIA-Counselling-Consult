@@ -5,9 +5,9 @@ import chocolateWomanSmiling from "@/assets/chocolate-woman-smiling.jpg";
 
 const stats = [
   { value: "25+", label: "Years of Experience" },
-  { value: "150k+", label: "Satisfied Clients" },
-  { value: "3", label: "Countries Reached" },
-  { value: "2k+", label: "Classes Conducted" },
+  { value: "95%", label: "Client Satisfaction" },
+  { value: "3", lacredenbel: "Countries Reached" },
+  { value: "2k+", label: "Training Sessions" },
 ];
 
 const features = [

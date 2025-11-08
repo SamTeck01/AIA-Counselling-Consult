@@ -9,7 +9,7 @@ const Footer = () => {
   }
 
   return (
-    <footer id="contact" className="py-8 bg-background">
+    <footer className="py-8 bg-background">
       <div className="container mx-auto px-4">
         <div className="bg-primary rounded-[50px] px-4 sm:px-8 md:px-12 py-16 relative overflow-hidden">
           {/* Content Grid */}
@@ -111,29 +111,41 @@ const Footer = () => {
             <div className="flex gap-3">
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://instagram.com/aiacounsellingconsult"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+                aria-label="Follow us on Instagram"
               >
                 <Instagram className="w-4 h-4" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://linkedin.com/company/aia-counselling-consult"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+                aria-label="Connect on LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://facebook.com/aiacounsellingconsult"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+                aria-label="Like us on Facebook"
               >
                 <Facebook className="w-4 h-4" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://twitter.com/aiacounselling"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/40 transition-colors"
+                aria-label="Follow us on Twitter"
               >
                 <Twitter className="w-4 h-4" />
               </motion.a>

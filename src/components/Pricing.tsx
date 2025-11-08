@@ -7,7 +7,7 @@ import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 const faqs = [
   {
     question: "What happens in the first consultation session?",
-    answer: "The first session is a Consultation/Diagnostic Session where the Counsellor/Therapist does case profiling and diagnoses the nature of the challenge, identifies clearer counselling/therapy goals, treatment plans and number of sessions required. The consultation fee depends on nature of challenge, age of clients, mode of therapy (Online, Office or Outdoor, individual or Group), and location.",
+    answer: "The first session is a Consultation/Diagnostic Session where the Counsellor/Therapist does case profiling and diagnoses the nature of the challenge, identifies clearer counselling/therapy goals, treatment plans and number of sessions required. Sessions typically start from ₦15,000 - ₦25,000 depending on nature of challenge, age of clients, mode of therapy (Online, Office or Outdoor, individual or Group), and location.",
   },
   {
     question: "What types of counselling sessions do you offer?",
