@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen max-h-4xl flex justify-center bg-gradient-to-br from-[#594A66] via-[#6A5A76] to-[#594A66] overflow-hidden mt-[82px] rounded-[20px] md:rounded-[38px] w-full"
+      className="relative h-auto max-h-[880px] flex justify-center bg-gradient-to-br from-[#594A66] via-[#6A5A76] to-[#594A66] overflow-hidden mt-[82px] rounded-[20px] md:rounded-[38px] w-full"
     >
       {/* Decorative Background Circles with Animations */}
       <motion.div
@@ -31,16 +31,16 @@ const Hero = () => {
       />
 
       <div className="container relative mx-auto px-4 sm:px-6 max-w-7xl">
-        <div className="relative flex space-y-4 justify-end items-center flex-col h-screen min-h-[600px] sm:min-h-[700px] md:min-h-[880px] pb-8 md:pb-2">
+        <div className="relative flex space-y-4 justify-end items-center flex-col h-auto min-h-[800px] sm:min-h-[880px] md:min-h-[880px] pb-8 md:pb-2">
           {/* Massive Background Text */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute inset-0 flex flex-col top-20 sm:top-32 md:top-40 text-center select-none w-full"
+            className="absolute inset-0 flex flex-col top-20 md:top-20 text-center select-none w-full h-fit"
           >
             <div className="relative w-full flexCenter">
-              <h1 className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[8vw] font-light text-white/90 leading-[1] tracking-tight w-[90%] sm:w-[85%] md:w-[82%] relative" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif"}}>
+              <h1 className="text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-[90px] font-light text-white/90 leading-[1] tracking-tight w-[90%] sm:w-[85%] md:w-[82%] relative" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif"}}>
                 Psychology and Counseling
                 {/* Decorative lines top-right */}
                 <motion.div
@@ -66,7 +66,7 @@ const Hero = () => {
             <img
               src={heroPsychologist}
               alt="Professional Psychologist"
-              className="w-[85%] sm:w-[75%] md:w-[90%] lg:w-[100%] max-w-[600px] h-auto object-contain drop-shadow-2xl"
+              className="w-[85%] sm:w-[65%] md:w-[90%] lg:w-[100%] max-w-[600px] h-auto object-contain drop-shadow-2xl"
             />
           </motion.div>
 
