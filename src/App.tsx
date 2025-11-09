@@ -8,6 +8,9 @@ import ServicesPage from "./pages/ServicesPage";
 import ServiceDetail from "./pages/ServiceDetail";
 import BlogPage from "./pages/BlogPage";
 import BlogPost from "./pages/BlogPost";
+import SelfAssessmentPage from "./pages/SelfAssessmentPage";
+import AssessmentTestPage from "./pages/AssessmentTestPage";
+import AssessmentResultsPage from "./pages/AssessmentResultsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/services/:serviceId" element={<ServiceDetail />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/self-assessment" element={<SelfAssessmentPage />} />
+          <Route path="/self-assessment/:assessmentId" element={<AssessmentTestPage />} />
+          <Route path="/self-assessment/:assessmentId/results" element={<AssessmentResultsPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

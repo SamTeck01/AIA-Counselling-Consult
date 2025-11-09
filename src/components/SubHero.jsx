@@ -3,11 +3,12 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { MoveRight } from "lucide-react";
+import { MoveRight, ClipboardCheck } from "lucide-react";
 import PhysioTherapyIcon from "@/assets/PhysioTheraphyIcon.svg";
 import CounsellingIcon from "@/assets/CounsellingIcon.svg";
 import BookIcon from "@/assets/BookIcon.svg";
 import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
+import { Link } from "react-router-dom";
 
 /* ===============================
    ✨ Animation Variants
@@ -33,10 +34,10 @@ const cardEntry = {
 /* ===============================
    ✨ Card Component
 ================================ */
-const SubHeroCard = ({ title, subtitle, icon, highlight, onClick }) => {
+const SubHeroCard = ({ title, subtitle, icon, highlight, onClick, linkTo, isIconComponent }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  return (
+  const CardContent = (
     <motion.article
       variants={cardEntry}
       initial="hidden"
@@ -72,7 +73,13 @@ const SubHeroCard = ({ title, subtitle, icon, highlight, onClick }) => {
       {/* ===== Content ===== */}
       <div className="relative z-10 flex items-start gap-4">
         <div className="w-16 h-16 flex items-center justify-center shrink-0">
-          <img src={icon} alt={title} className="w-8 h-8 object-contain" />
+          {isIconComponent ? (
+            <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+              {icon}
+            </div>
+          ) : (
+            <img src={icon} alt={title} className="w-8 h-8 object-contain" />
+          )}
         </div>
 
         <div className="flex-1 space-y-3">
@@ -102,6 +109,13 @@ const SubHeroCard = ({ title, subtitle, icon, highlight, onClick }) => {
 
     </motion.article>
   );
+
+  // Wrap with Link if linkTo is provided
+  if (linkTo) {
+    return <Link to={linkTo}>{CardContent}</Link>;
+  }
+
+  return CardContent;
 };
 
 /* ===============================
@@ -110,18 +124,21 @@ const SubHeroCard = ({ title, subtitle, icon, highlight, onClick }) => {
 export default function SubHero() {
   const cards = [
     {
-      title: "Psychotherapy",
+      title: "Self-Assessment",
       subtitle:
-        "Long-term process that focuses on you as an individual — your thoughts, motivations & behaviors.",
-      icon: PhysioTherapyIcon,
+        "Take a free, confidential assessment to understand your mental health and get personalized recommendations.",
+      icon: <ClipboardCheck className="w-6 h-6 text-primary" />,
       highlight: false,
+      isIconComponent: true,
+      linkTo: "/self-assessment",
     },
     {
-      title: "Counselling",
+      title: "All Sessions",
       subtitle:
-        "Short-term process that focuses on specific issues and helps address a particular problem.",
+        "Explore a wide range of counselling/therapy sessions to address various issues.",
       icon: CounsellingIcon,
       highlight: true,
+      linkTo: "/services",
     },
     {
       title: "Book a Session",
@@ -151,6 +168,8 @@ export default function SubHero() {
               icon={c.icon}
               highlight={c.highlight}
               onClick={c.onClick}
+              linkTo={c.linkTo}
+              isIconComponent={c.isIconComponent}
             />
           ))}
         </motion.div>

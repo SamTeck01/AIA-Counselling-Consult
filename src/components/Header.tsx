@@ -51,6 +51,7 @@ const Header = () => {
               { label: "Home", action: "link", target: "/" },
               { label: "About", action: "scroll", target: "about" },
               { label: "Services", action: "link", target: "/services" },
+              { label: "Self-Assessment", action: "link", target: "/self-assessment" },
               { label: "Blog", action: "link", target: "/blog" },
               { label: "Contact", action: "scroll", target: "contact" }
             ].map((item, index) => (
@@ -123,6 +124,7 @@ const Header = () => {
                 { label: "Home", action: "link", target: "/" },
                 { label: "About", action: "scroll", target: "about" },
                 { label: "Services", action: "link", target: "/services" },
+                { label: "Self-Assessment", action: "link", target: "/self-assessment" },
                 { label: "Blog", action: "link", target: "/blog" },
                 { label: "Contact", action: "scroll", target: "contact" }
               ].map((item) => (
