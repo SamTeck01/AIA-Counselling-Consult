@@ -81,7 +81,7 @@ const Hero = () => {
               Professional counselling services with over two decades of experience. We empower adolescents, youths and couples through personalized and multi-dimensional counselling, guaranteeing transformative results.
             </p>
             
-            {/* Pricing Badge */}
+            {/* Pricing Badge 
             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 space-y-2">
               <p className="text-white/70 text-xs">Sessions Starting From</p>
               <div className="flex items-baseline justify-center md:justify-end gap-2">
@@ -89,23 +89,7 @@ const Hero = () => {
                 <span className="text-white/60 text-sm">- ₦25,000</span>
               </div>
               <p className="text-white/60 text-xs">Flexible payment plans available</p>
-            </div>
-
-            {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center md:justify-end gap-3 text-xs text-white/80">
-              <div className="flex items-center gap-1">
-                <span>✓</span>
-                <span>2,000+ Clients</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <span>✓</span>
-                <span>95% Satisfaction</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <span>✓</span>
-                <span>25+ Years</span>
-              </div>
-            </div>
+            </div>*/}
 
             <Button 
               onClick={() => openWhatsApp(WHATSAPP_MESSAGES.BOOK_TODAY)}

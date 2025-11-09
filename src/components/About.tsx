@@ -97,7 +97,7 @@ const About = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                   transition={{ delay: 0.5, duration: 0.5 }}
-                  className="relative md:absolute md:-bottom-6 md:right-0 bg-primary/10 p-6 md:h-[220px] w-full md:w-fit md:rounded-t-full rounded-3xl flexCenter"
+                  className="relative md:absolute md:-bottom-5 md:right-0 bg-primary/10 p-6 md:h-[220px] w-full md:w-fit md:rounded-t-full rounded-3xl flexCenter"
                 >
                   <div className="flex items-center gap-4 flex-col">
                     <div className="text-[80px] md:text-[120px] leading-[1] tracking-tighter" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}}>25+</div>
@@ -116,16 +116,14 @@ const About = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8 }}
-            className="relative lg:w-[100%] hidden lg:block"
+            className="relative lg:w-[100%] hidden lg:flex justify-center"
           >
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
               className="relative"
             >
-              <img src={founder} alt="Dr. Ibraheem Adedayo Adediran" className='rounded-t-full object-cover'/>
-              
-
+              <img src={founder} alt="Dr. Ibraheem Adedayo Adediran" className='rounded-t-full object-cover w-[500px]'/>
             </motion.div>
           </motion.div>
 
