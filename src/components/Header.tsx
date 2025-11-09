@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -31,7 +33,7 @@ const Header = () => {
       } `}
     >
       <div className="container mx-auto px-4">
-        <div className="flex justify-between  lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-20 gap-4">
+        <div className="flex justify-between  lg:grid lg:grid-cols-[1fr_auto_1fr] items-center h-[60px] gap-4">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -39,7 +41,7 @@ const Header = () => {
             className="flex items-center gap-2 cursor-pointer justify-start"
             onClick={() => scrollToSection("home")}
           >
-            <div className="text-4xl font-light tracking-tight flex flex-row space-x-2 h-fit " style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
+            <div className="text-3xl font-light tracking-tight flex flex-row space-x-2 h-fit " onClick={() => navigate('/')} style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
               <span className="text-primary">AIA</span>
               <span className="hidden md:block text-foreground"> Counselling</span>
               <span className=" text-primary"> Consult</span>

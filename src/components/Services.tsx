@@ -5,8 +5,53 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { 
+  ArrowRight,
+  HeartCrack, 
+  Briefcase, 
+  Brain, 
+  Lightbulb, 
+  Wind, 
+  Shield, 
+  HeartHandshake, 
+  Scale, 
+  Flame, 
+  Sparkles, 
+  Heart, 
+  Puzzle, 
+  Users, 
+  Zap, 
+  ShieldAlert, 
+  Apple, 
+  Users2, 
+  Baby, 
+  GraduationCap,
+  LucideIcon
+} from "lucide-react";
 import { getFeaturedExpandedServices } from "@/data/expandedServicesData";
+
+// Icon mapping
+const iconMap: Record<string, LucideIcon> = {
+  HeartCrack,
+  Briefcase,
+  Brain,
+  Lightbulb,
+  Wind,
+  Shield,
+  HeartHandshake,
+  Scale,
+  Flame,
+  Sparkles,
+  Heart,
+  Puzzle,
+  Users,
+  Zap,
+  ShieldAlert,
+  Apple,
+  Users2,
+  Baby,
+  GraduationCap,
+};
 
 export default function Services() {
   const ref = useRef(null);
@@ -78,8 +123,13 @@ export default function Services() {
                 className="grid grid-cols-1 md:grid-cols-[1fr_4fr_4fr] gap-8 py-8 items-center group cursor-pointer"
               >
                 {/* Icon */}
-                <div className="w-16 h-16 flex-shrink-0">
-                  <img src={service.icon} alt={service.title} className="w-full h-full object-contain" style={{filter: "brightness(0) invert(0)"}}/>
+                <div className="w-16 h-16 flex-shrink-0 bg-primary/10 rounded-2xl flex items-center justify-center">
+                  {(() => {
+                    const IconComponent = iconMap[service.icon];
+                    return IconComponent ? (
+                      <IconComponent className="w-8 h-8 text-primary" />
+                    ) : null;
+                  })()}
                 </div> 
 
                 {/* Title & Description */}
