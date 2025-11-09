@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import about from '@/assets/about.png';
+import founder from '@/assets/founder.jpg';
 import Physiotherapy from '@/assets/PhysioTheraphyIcon.svg';
 
 const About = () => {
@@ -123,7 +123,7 @@ const About = () => {
               transition={{ duration: 0.3 }}
               className="relative"
             >
-              <img src={about} className='rounded-t-full'/>
+              <img src={founder} alt="Dr. Ibraheem Adedayo Adediran" className='rounded-t-full object-cover'/>
               
 
             </motion.div>

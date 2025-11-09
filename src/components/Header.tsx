@@ -47,19 +47,40 @@ const Header = () => {
           </motion.div>
 
           <nav className="hidden lg:flex items-center gap-8">
-            {["Home", "About", "Services", "Studies", "Contact"].map((item, index) => (
-              <motion.button
-                key={item}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * index }}
-                onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-foreground/80 hover:text-primary transition-colors font-medium relative group"
-                style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
-              >
-                {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-              </motion.button>
+            {[
+              { label: "Home", action: "link", target: "/" },
+              { label: "About", action: "scroll", target: "about" },
+              { label: "Services", action: "link", target: "/services" },
+              { label: "Blog", action: "link", target: "/blog" },
+              { label: "Contact", action: "scroll", target: "contact" }
+            ].map((item, index) => (
+              item.action === "link" ? (
+                <motion.a
+                  key={item.label}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 * index }}
+                  href={item.target}
+                  className="text-foreground/80 hover:text-primary transition-colors font-medium relative group"
+                  style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                </motion.a>
+              ) : (
+                <motion.button
+                  key={item.label}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 * index }}
+                  onClick={() => scrollToSection(item.target)}
+                  className="text-foreground/80 hover:text-primary transition-colors font-medium relative group"
+                  style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                </motion.button>
+              )
             ))}
           </nav>
 
@@ -98,15 +119,32 @@ const Header = () => {
             className="lg:hidden border-t border-border/50"
           >
             <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
-              {["Home", "About", "Services", "Studies", "Contact"].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase())}
-                  className="text-foreground/80 hover:text-primary transition-colors font-medium text-left py-2"
-                  style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
-                >
-                  {item}
-                </button>
+              {[
+                { label: "Home", action: "link", target: "/" },
+                { label: "About", action: "scroll", target: "about" },
+                { label: "Services", action: "link", target: "/services" },
+                { label: "Blog", action: "link", target: "/blog" },
+                { label: "Contact", action: "scroll", target: "contact" }
+              ].map((item) => (
+                item.action === "link" ? (
+                  <a
+                    key={item.label}
+                    href={item.target}
+                    className="text-foreground/80 hover:text-primary transition-colors font-medium text-left py-2"
+                    style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <button
+                    key={item.label}
+                    onClick={() => scrollToSection(item.target)}
+                    className="text-foreground/80 hover:text-primary transition-colors font-medium text-left py-2"
+                    style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                  >
+                    {item.label}
+                  </button>
+                )
               ))}
               <Button
                 onClick={() => openWhatsApp(WHATSAPP_MESSAGES.LETS_TALK)}

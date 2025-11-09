@@ -20,8 +20,11 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-    title: "Office Location",
-    details: ["Lagos, Nigeria", "Abuja, Nigeria"],
+    title: "Office Locations",
+    details: [
+      "No 1, Olagoke Close, Wakajaye, Ibadan",
+      "No 12, Shabra Estate, Trademore Road, Lugbe, Abuja"
+    ],
     action: "Available for in-person sessions",
   },
   {

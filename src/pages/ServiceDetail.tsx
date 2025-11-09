@@ -4,14 +4,14 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import BookingForm from "@/components/BookingForm";
-import { getServiceById } from "@/data/servicesData";
+import { getExpandedServiceById } from "@/data/expandedServicesData";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Check } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function ServiceDetail() {
   const { serviceId } = useParams<{ serviceId: string }>();
-  const service = serviceId ? getServiceById(serviceId) : null;
+  const service = serviceId ? getExpandedServiceById(serviceId) : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);

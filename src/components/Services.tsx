@@ -6,12 +6,12 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { getFeaturedServices } from "@/data/servicesData";
+import { getFeaturedExpandedServices } from "@/data/expandedServicesData";
 
 export default function Services() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const services = getFeaturedServices();
+  const services = getFeaturedExpandedServices();
 
   return (
     <section id="services" className="py-20 bg-[#FDF9F7] relative overflow-hidden">

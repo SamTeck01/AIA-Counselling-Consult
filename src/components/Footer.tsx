@@ -97,10 +97,10 @@ const Footer = () => {
             >
               <h3 className="text-white text-base font-normal mb-6">Contact</h3>
               <ul className="space-y-4">
-                <li className="text-white/60 text-sm">Professional Counselling Services</li>
-                <li className="text-white/60 text-sm">Virtual & Physical Sessions</li>
-                <li className="text-white/60 text-sm">International Network</li>
-                <li><a href="mailto:ibcounsellor@yahoo.com" className="text-white/60 hover:text-white transition-colors text-sm">ibcounsellor@yahoo.com</a></li>
+                <li className="text-white/60 text-sm">📍 No 1, Olagoke Close, Wakajaye, Ibadan</li>
+                <li className="text-white/60 text-sm">📍 No 12, Shabra Estate, Trademore Road, Lugbe, Abuja</li>
+                <li><a href="mailto:ibcounsellor@yahoo.com" className="text-white/60 hover:text-white transition-colors text-sm">✉️ ibcounsellor@yahoo.com</a></li>
+                <li className="text-white/60 text-sm">📞 +234 803 406 7608</li>
               </ul>
             </motion.div>
           </div>

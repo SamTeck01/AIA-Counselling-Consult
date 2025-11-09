@@ -9,43 +9,43 @@ import profile4 from '../assets/profile 4.jpg'
 
 const teamMembers = [
   {
-    name: "Meghan Bennet",
-    role: "Psychiatry",
+    name: "Engr. Tijani Kehinde Oladoke",
+    role: "Director Technical Matters",
     image: profile1,
     socials: {
       twitter: "#",
       linkedin: "#",
-      email: "mailto:meghan@example.com",
+      email: "mailto:ibcounsellor@yahoo.com",
     },
   },
   {
-    name: "Mikey Kenny",
-    role: "Psychiatrist",
+    name: "Mr. Quadri Taiwo Oladoke",
+    role: "Director Administration",
     image: profile2,
     socials: {
       twitter: "#",
       linkedin: "#",
-      email: "mailto:mikey@example.com",
+      email: "mailto:ibcounsellor@yahoo.com",
     },
   },
   {
-    name: "Lidia Huynh",
-    role: "Therapy Expert",
+    name: "Esv. Sekinat O. Oladoke Salami",
+    role: "Director of Valuation and Planning Matters",
     image: profile3,
     socials: {
       twitter: "#",
       linkedin: "#",
-      email: "mailto:lidia@example.com",
+      email: "mailto:ibcounsellor@yahoo.com",
     },
   },
   {
-    name: "Zackery Mills",
-    role: "Managing Director",
+    name: "Engr. Bilkis Oladoke Adediran",
+    role: "Director ICT/MIS",
     image: profile4,
     socials: {
       twitter: "#",
       linkedin: "#",
-      email: "mailto:zackery@example.com",
+      email: "mailto:ibcounsellor@yahoo.com",
     },
   },
 ];
