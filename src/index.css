@@ -10,49 +10,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Custom Color Variables */
-    --primary-color: #594A66;
-    --secondary-color: #45494F;
-    --third-color: #F8E6D8;
+    /* Custom Color Variables - AIA Brand Colors */
+    --primary-color: #2B4C9E; /* Royal Blue */
+    --secondary-color: #1E3A7A; /* Darker Blue */
+    --third-color: #E8F02C; /* Bright Yellow */
     --white-color: #ffffffff;
-    --primary-dark-color: #1C2436;
-    --body_bg-color: hsl(27, 53%, 97%);
-    --primary-color-rgb: 89, 74, 102;
-    --secondary-color-rgb: 69, 73, 79;
-    --third-color-rgb: 248, 230, 216;
-    --white-color-rgb: 0, 0, 0;
-    --primary-dark-color-rgb: 28, 36, 54;
-    --body_bg-color-rgb: 251, 246, 242;
+    --primary-dark-color: #1A2D5F;
+    --body_bg-color: hsl(0, 0%, 98%);
+    --primary-color-rgb: 43, 76, 158;
+    --secondary-color-rgb: 30, 58, 122;
+    --third-color-rgb: 232, 240, 44;
+    --white-color-rgb: 255, 255, 255;
+    --primary-dark-color-rgb: 26, 45, 95;
+    --body_bg-color-rgb: 250, 250, 250;
 
-    /* Tailwind Color Variables (HSL) - Updated to match new color scheme */
-    --background: 27, 53%, 97%;
-    --foreground: 278 18% 35%;
+    /* Tailwind Color Variables (HSL) - AIA Brand Colors */
+    --background: 0 0% 98%;
+    --foreground: 220 57% 37%;
 
-    --card: 30 38% 97%;
-    --card-foreground: 278 18% 35%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 57% 37%;
 
-    --popover: 30 38% 97%;
-    --popover-foreground: 278 18% 35%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 57% 37%;
 
-    --primary: 278 18% 35%;
-    --primary-foreground: 30 53% 91%;
+    --primary: 220 57% 37%; /* Royal Blue */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 53% 91%;
-    --secondary-foreground: 278 18% 35%;
+    --secondary: 63 83% 56%; /* Bright Yellow - Accent */
+    --secondary-foreground: 220 57% 37%; /* Blue text on yellow */
 
-    --muted: 30 38% 95%;
-    --muted-foreground: 210 6% 45%;
+    --muted: 220 20% 95%;
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 278 18% 45%;
-    --accent-foreground: 30 53% 91%;
+    --accent: 63 83% 56%; /* Bright Yellow */
+    --accent-foreground: 220 57% 37%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --radius: 1.5rem;
 
-    --hero-gradient: linear-gradient(135deg, hsl(278 18% 35%), hsl(278 18% 45%));
-    --card-shadow: 0 4px 20px -2px hsl(278 18% 35% / 0.1);
+    --hero-gradient: linear-gradient(135deg, hsl(220 57% 37%), hsl(220 57% 47%));
+    --card-shadow: 0 4px 20px -2px hsl(220 57% 37% / 0.1);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -111,10 +111,10 @@ All colors MUST be HSL.
 
   @keyframes pulse-glow {
     0%, 100% {
-      box-shadow: 0 0 20px rgba(89, 74, 102, 0.3);
+      box-shadow: 0 0 20px rgba(43, 76, 158, 0.3);
     }
     50% {
-      box-shadow: 0 0 40px rgba(89, 74, 102, 0.6);
+      box-shadow: 0 0 40px rgba(43, 76, 158, 0.6);
     }
   }
 
@@ -274,10 +274,10 @@ All colors MUST be HSL.
   /* Glow Effect */
   @keyframes glow {
     0%, 100% {
-      filter: drop-shadow(0 0 5px rgba(89, 74, 102, 0.5));
+      filter: drop-shadow(0 0 5px rgba(43, 76, 158, 0.5));
     }
     50% {
-      filter: drop-shadow(0 0 20px rgba(89, 74, 102, 0.8));
+      filter: drop-shadow(0 0 20px rgba(43, 76, 158, 0.8));
     }
   }
 
@@ -421,7 +421,7 @@ All colors MUST be HSL.
   }
 
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(89, 74, 102, 0.5);
+    box-shadow: 0 0 30px rgba(43, 76, 158, 0.5);
   }
 
   /* Scroll Reveal Classes */

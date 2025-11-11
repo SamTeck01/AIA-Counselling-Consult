@@ -143,7 +143,7 @@ const Team = () => {
                       href={member.socials.twitter}
                       target="_blank"
                       rel="noreferrer"
-                      className="w-10 h-10 rounded-full bg-white text-[#5B4A78] flex items-center justify-center hover:bg-[#FFD6E0] transition"
+                      className="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center hover:bg-secondary transition"
                     >
                       <Twitter />
                     </a>
@@ -151,13 +151,13 @@ const Team = () => {
                       href={member.socials.linkedin}
                       target="_blank"
                       rel="noreferrer"
-                      className="w-10 h-10 rounded-full bg-white text-[#5B4A78] flex items-center justify-center hover:bg-[#FFD6E0] transition"
+                      className="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center hover:bg-secondary transition"
                     >
                       <LinkedinIcon />
                     </a>
                     <a
                       href={member.socials.email}
-                      className="w-10 h-10 rounded-full bg-white text-[#5B4A78] flex items-center justify-center hover:bg-[#FFD6E0] transition"
+                      className="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center hover:bg-secondary transition"
                     >
                       <Mail />
                     </a>

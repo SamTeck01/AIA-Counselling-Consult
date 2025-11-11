@@ -184,7 +184,7 @@ export default function SelfAssessmentPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#FDF9F7]">
+      <section className="py-20 bg-[#F5F8FC]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -206,7 +206,7 @@ export default function SelfAssessmentPage() {
               unique situation. Book a session today.
             </p>
             <Link to="/#contact">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              <Button size="lg" className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary font-semibold">
                 Contact Us
               </Button>
             </Link>

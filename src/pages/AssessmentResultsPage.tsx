@@ -108,7 +108,7 @@ export default function AssessmentResultsPage() {
       </section>
 
       {/* Recommended Service */}
-      <section className="py-12 bg-[#FDF9F7]">
+      <section className="py-12 bg-[#F5F8FC]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -62,7 +62,7 @@ export default function AssessmentTestPage() {
 
   if (!started) {
     return (
-      <div className="min-h-screen overflow-x-hidden bg-[#FDF9F7]">
+      <div className="min-h-screen overflow-x-hidden bg-[#F5F8FC]">
         <Header />
         <section className="pt-32 pb-20">
           <div className="container mx-auto px-4">
@@ -119,7 +119,7 @@ export default function AssessmentTestPage() {
               <Button
                 size="lg"
                 onClick={() => setStarted(true)}
-                className="bg-primary hover:bg-primary/90 text-white"
+                className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary font-semibold"
               >
                 Start Assessment
               </Button>
@@ -134,7 +134,7 @@ export default function AssessmentTestPage() {
   const question = assessment.questions[currentQuestion];
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#FDF9F7]">
+    <div className="min-h-screen overflow-x-hidden bg-[#F5F8FC]">
       <Header />
       <section className="pt-32 pb-20">
         <div className="container mx-auto px-4">
@@ -217,7 +217,7 @@ export default function AssessmentTestPage() {
               <Button
                 onClick={handleNext}
                 disabled={!isCurrentQuestionAnswered}
-                className="bg-primary hover:bg-primary/90 text-white"
+                className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary font-semibold disabled:opacity-50"
               >
                 {currentQuestion === assessment.questions.length - 1 ? "See Results" : "Next"}
                 <ArrowRight className="w-4 h-4 ml-2" />

@@ -59,7 +59,7 @@ export default function Services() {
   const services = getFeaturedExpandedServices();
 
   return (
-    <section id="services" className="py-20 bg-[#FDF9F7] relative overflow-hidden">
+    <section id="services" className="py-20 bg-[#F5F8FC] relative overflow-hidden">
       {/* Floating Accent Circle */}
       <motion.div
         animate={{
@@ -104,7 +104,7 @@ export default function Services() {
             className="flex-shrink-0"
           >
             <Link to="/services">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+              <Button size="lg" className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary">
                 View All Services
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
@@ -145,7 +145,7 @@ export default function Services() {
                   <p className="text-muted-foreground leading-relaxed text-sm mb-3">
                     {service.shortDescription}
                   </p>
-                  <div className="flex items-center gap-2 text-primary text-sm font-medium">
+                  <div className="flex items-center gap-2 text-primary text-sm font-semibold group-hover:gap-3 transition-all">
                     <span>Schedule Appointment</span>
                     <ArrowRight className="w-4 h-4" />
                   </div>

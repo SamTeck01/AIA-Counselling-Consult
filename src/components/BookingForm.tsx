@@ -37,7 +37,7 @@ Could you please provide me with available time slots?`;
   };
 
   return (
-    <div className="bg-[#FDF9F7] rounded-3xl p-8 border border-primary/10">
+    <div className="bg-[#F5F8FC] rounded-3xl p-8 border border-primary/10">
       <h3
         className="text-2xl md:text-3xl mb-6"
         style={{
@@ -106,7 +106,7 @@ Could you please provide me with available time slots?`;
         <Button
           onClick={handleBooking}
           size="lg"
-          className="w-full bg-primary hover:bg-primary/90 text-white h-12"
+          className="w-full bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary h-12 font-semibold"
           disabled={!sessionType}
         >
           <Calendar className="w-4 h-4 mr-2" />

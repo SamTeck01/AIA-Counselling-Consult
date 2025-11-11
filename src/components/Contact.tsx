@@ -40,7 +40,7 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contact" className="py-20 bg-[#FDF9F7] relative overflow-hidden">
+    <section id="contact" className="py-20 bg-[#F5F8FC] relative overflow-hidden">
       {/* Background Decoration */}
       <motion.div
         animate={{
@@ -156,7 +156,7 @@ export default function Contact() {
                         </p>
                       ))}
                     </div>
-                    <p className="text-xs text-primary">{info.action}</p>
+                    <p className="text-xs text-primary font-semibold">{info.action}</p>
                   </div>
                 </div>
               </motion.div>

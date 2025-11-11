@@ -74,7 +74,7 @@ export default function SelfAssessmentCTA() {
               </div>
 
               <Link to="/self-assessment">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white group">
+                <Button size="lg" className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary group font-semibold">
                   Take Free Assessment
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>

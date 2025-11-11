@@ -1,6 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
 import caseStudy1 from "../assets/social anxiety.jpg";
+import chocolateWomanSmiling from '@/assets/chocolate-woman-smiling.jpg';
+import blackWomanSmiling from '@/assets/black-woman-smiling.jpg';
 
 
 // 📝 Sample Case Study data
@@ -11,11 +13,11 @@ const caseStudies = [
   },
   {
     title: "Social Anxiety Breakthrough",
-    image: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=800&q=80",
+    image: blackWomanSmiling,
   },
   {
     title: "Rise Above Anxiety",
-    image: "https://images.unsplash.com/photo-1604881991720-f91add269bed?auto=format&fit=crop&w=800&q=80",
+    image: chocolateWomanSmiling,
   },
 ];
 
@@ -90,13 +92,13 @@ export default function CaseStudies() {
         <div className="flex justify-center mt-8 gap-4">
           <button
             onClick={() => scroll("left")}
-            className="w-10 h-10 rounded-full border border-[#3B365A] flex items-center justify-center hover:bg-[#3B365A] hover:text-white transition"
+            className="w-10 h-10 rounded-full border border-primary flex items-center justify-center hover:bg-primary hover:text-white transition"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={() => scroll("right")}
-            className="w-10 h-10 rounded-full border border-[#3B365A] flex items-center justify-center hover:bg-[#3B365A] hover:text-white transition"
+            className="w-10 h-10 rounded-full border border-primary flex items-center justify-center hover:bg-primary hover:text-white transition"
           >
             <ChevronRight className="w-5 h-5" />
           </button>

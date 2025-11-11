@@ -196,7 +196,7 @@ export default function BlogPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#FDF9F7]">
+      <section className="py-20 bg-[#F5F8FC]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -219,7 +219,7 @@ export default function BlogPage() {
               Our experienced counsellors are here to help you on your journey to mental wellness.
             </p>
             <Link to="/#contact">
-              <button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-medium transition-colors">
+              <button className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary px-8 py-3 rounded-full font-semibold transition-colors">
                 Book a Consultation
               </button>
             </Link>

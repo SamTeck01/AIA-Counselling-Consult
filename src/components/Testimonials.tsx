@@ -3,6 +3,12 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Play, Pause } from "lucide-react";
+import chocolateWomanSmiling from '@/assets/chocolate-woman-smiling.jpg';
+import blackWomanSmiling from '@/assets/black-woman-smiling.jpg';
+import founder from '@/assets/founder.jpg';
+import profile1 from '@/assets/profile1.jpg';
+import profile2 from '@/assets/profile 2.jpg';
+import profile3 from '@/assets/profile 3.jpg';
 
 const testimonials = [
   {
@@ -10,42 +16,42 @@ const testimonials = [
     role: "15 years old",
     content:
       "Before my counselling sessions, I used to bottle up my feelings and get angry over everything. Talking with my counsellor helped me understand my emotions and express them better. I've learned to pause, breathe, and respond instead of react. I'm now more confident and happier with myself.",
-    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=faces",
+    avatar: profile1,
   },
   {
     name: "Mrs. Okonkwo",
     role: "Parent",
     content:
       "I can't thank you enough for what you've done for my daughter. She was struggling with self-esteem and anger outbursts, but through counselling, she has become calmer and more confident. She now opens up to me and communicates better. You've truly made a difference in our home.",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces",
+    avatar: profile2,
   },
   {
     name: "Mr. Adeyemi",
     role: "Class Teacher",
     content:
       "The counselling sessions brought so much positive change among our students. Many of them are now more focused, respectful, and emotionally aware. The guidance given has not only improved their academics but also their attitude toward learning and life.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
+    avatar: founder,
   },
   {
     name: "Grace",
     role: "23 years old",
     content:
       "Counselling helped me heal from experiences I didn't even realize were holding me back. I learned to let go of guilt, set healthy boundaries, and rediscover my sense of purpose. I'm grateful for the safe and non-judgmental space that helped me grow emotionally and spiritually.",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces",
+    avatar: profile3,
   },
   {
     name: "Mr. Hassan",
     role: "Parent",
     content:
       "My son was always withdrawn and easily distracted, but after his counselling sessions, he's become more expressive and attentive. The progress has been amazing, and I've learned a lot as a parent through the feedback sessions. This service is truly life-changing.",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
+    avatar: blackWomanSmiling,
   },
   {
     name: "Chidera",
     role: "15 years old",
     content:
       "Before my counselling sessions, I used to bottle up my feelings and get angry over everything. Talking with my counsellor helped me understand my emotions and express them better. I've learned to pause, breathe, and respond instead of react. I'm now more confident and happier with myself.",
-    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=150&h=150&fit=crop&crop=faces",
+    avatar: chocolateWomanSmiling,
   },
 ];
 

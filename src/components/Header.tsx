@@ -95,7 +95,7 @@ const Header = () => {
             >
               <Button
                 onClick={() => openWhatsApp(WHATSAPP_MESSAGES.LETS_TALK)}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6 hidden lg:flex"
+                className="bg-[#E8F02C] text-primary hover:bg-[#E8F02C]/90 rounded-full px-6 hidden lg:flex font-semibold"
               >
                 Let's Talk
               </Button>
@@ -152,7 +152,7 @@ const Header = () => {
               ))}
               <Button
                 onClick={() => openWhatsApp(WHATSAPP_MESSAGES.LETS_TALK)}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full w-full mt-2"
+                className="bg-[#E8F02C] text-primary hover:bg-[#E8F02C]/90 rounded-full w-full mt-2 font-semibold"
                 style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
               >
                 Let's Talk

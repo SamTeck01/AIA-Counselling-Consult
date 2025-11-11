@@ -40,7 +40,7 @@ export default function ServiceDetail() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-12 bg-[#FDF9F7]">
+      <section className="pt-32 pb-12 bg-[#F5F8FC]">
         <div className="container mx-auto px-4">
           <Link to="/services">
             <Button variant="ghost" className="mb-6">

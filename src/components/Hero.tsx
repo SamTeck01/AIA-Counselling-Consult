@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-auto max-h-[880px] flex justify-center bg-gradient-to-br from-[#594A66] via-[#6A5A76] to-[#594A66] overflow-hidden mt-[62px] rounded-[20px] md:rounded-[38px] w-full"
+      className="relative h-auto max-h-[880px] flex justify-center bg-gradient-to-br from-[#2B4C9E] via-[#3A5FB8] to-[#2B4C9E] overflow-hidden mt-[62px] rounded-[20px] md:rounded-[38px] w-full"
     >
       {/* Decorative Background Circles with Animations */}
       <motion.div
@@ -93,7 +93,7 @@ const Hero = () => {
 
             <Button 
               onClick={() => openWhatsApp(WHATSAPP_MESSAGES.BOOK_TODAY)}
-              className="bg-white text-[#594A66] hover:bg-white/90 rounded-full px-8 py-4 sm:px-10 sm:py-6 text-sm sm:text-base font-light shadow-lg w-full"
+              className="bg-[#E8F02C] text-[#2B4C9E] hover:bg-[#E8F02C]/90 rounded-full px-8 py-4 sm:px-10 sm:py-6 text-sm sm:text-base font-semibold shadow-lg w-full"
             >
               Book Your Session Now
             </Button>

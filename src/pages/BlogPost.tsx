@@ -200,7 +200,7 @@ export default function BlogPost() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-12 bg-[#FDF9F7] rounded-3xl p-8 md:p-12 text-center"
+              className="mt-12 bg-[#F5F8FC] rounded-3xl p-8 md:p-12 text-center"
             >
               <h3
                 className="text-2xl md:text-3xl mb-4"
@@ -215,7 +215,7 @@ export default function BlogPost() {
                 Our experienced counsellors are here to provide personalized support for your mental health journey.
               </p>
               <Link to="/#contact">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                <Button size="lg" className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary font-semibold">
                   Book a Consultation
                 </Button>
               </Link>
@@ -226,7 +226,7 @@ export default function BlogPost() {
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
-        <section className="py-20 bg-[#FDF9F7]">
+        <section className="py-20 bg-[#F5F8FC]">
           <div className="container mx-auto px-4">
             <h2
               className="text-3xl md:text-4xl mb-12 text-center"

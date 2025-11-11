@@ -1,3 +1,10 @@
+import chocolateWomanSmiling from '@/assets/chocolate-woman-smiling.jpg';
+import blackWomanSmiling from '@/assets/black-woman-smiling.jpg';
+import founder from '@/assets/founder.jpg';
+import profile1 from '@/assets/profile1.jpg';
+import profile2 from '@/assets/profile 2.jpg';
+import socialAnxiety from '@/assets/social anxiety.jpg';
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -27,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 min read",
     category: "Mental Wellness",
     tags: ["Resilience", "Coping Strategies", "Mental Health", "Self-Care"],
-    image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=1200&h=800&fit=crop",
+    image: blackWomanSmiling,
     featured: true,
   },
   {
@@ -42,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min read",
     category: "Mental Health",
     tags: ["Anxiety", "Mental Health", "Therapy", "Coping Skills"],
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&h=800&fit=crop",
+    image: founder,
     featured: true,
   },
   {
@@ -57,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "12 min read",
     category: "Self-Care",
     tags: ["Self-Care", "Work-Life Balance", "Stress Management", "Wellness"],
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&h=800&fit=crop",
+    image: profile1,
     featured: true,
   },
   {
@@ -72,7 +79,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "15 min read",
     category: "Relationships",
     tags: ["Relationships", "Communication", "Couples Therapy", "Conflict Resolution"],
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1200&h=800&fit=crop",
+    image: profile2,
     featured: false,
   },
   {
@@ -87,7 +94,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "11 min read",
     category: "Career & Work",
     tags: ["Workplace Stress", "Career", "Work-Life Balance", "Nigerian Professionals"],
-    image: "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=1200&h=800&fit=crop",
+    image: socialAnxiety,
     featured: false,
   },
   {
@@ -102,7 +109,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "9 min read",
     category: "Parenting",
     tags: ["Parenting", "Child Psychology", "Family", "Mental Health"],
-    image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=1200&h=800&fit=crop",
+    image: chocolateWomanSmiling,
     featured: false,
   },
 ];

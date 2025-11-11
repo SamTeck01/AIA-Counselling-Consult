@@ -106,7 +106,7 @@ const About = () => {
                 </motion.div>
               </div>
 
-              <Button size="lg" className="flex md:hidden mt-4 rounded-full group bg-primary hover:bg-primary/90 p-8 text-md w-full md:w-fit" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif", fontWeight: '400'}} >
+              <Button size="lg" className="flex md:hidden mt-4 rounded-full group bg-[#E8F02C] hover:bg-[#E8F02C]/90 p-8 text-md w-full md:w-fit text-primary font-semibold" style={{fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif"}} >
                 Learn More
               </Button>
             </motion.div>

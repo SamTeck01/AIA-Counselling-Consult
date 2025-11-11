@@ -61,7 +61,7 @@ const SubHeroCard = ({ title, subtitle, icon, highlight, onClick, linkTo, isIcon
           width: '300px',
           height: '300px',
           borderRadius: '0 100% 0 0',
-          backgroundColor: '#FBEFE6',
+          backgroundColor: '#fbf9e6',
           transformOrigin: 'bottom left',
           transform: isHovered ? 'scale(2.5)' : 'scale(0)',
           transition: 'transform cubic-bezier(0.4, 0, 0.2, 1)',

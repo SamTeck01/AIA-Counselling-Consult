@@ -1,5 +1,5 @@
-import chocolateWomanSmiling from '@/assets/chocolate-woman-smiling.jpg';
-import blackWomanSmiling from '@/assets/black-woman-smiling.jpg';
+// All images are Black people from Unsplash - contextually appropriate and unique for each service
+import trauma from '@/assets/trauma.jpg'
 
 export interface Service {
   id: string;
@@ -22,7 +22,7 @@ export const allExpandedServices: Service[] = [
     title: "Trauma Counselling",
     shortDescription: "Professional support for healing from traumatic experiences with evidence-based therapeutic approaches.",
     fullDescription: "Our Trauma Counselling service provides specialized support for individuals who have experienced traumatic events. We use evidence-based approaches including EMDR, CBT, and trauma-focused therapy to help you process traumatic memories, reduce symptoms of PTSD, and regain a sense of safety and control in your life.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    image: trauma,
     benefits: [
       "Process traumatic memories safely",
       "Reduce PTSD symptoms",
@@ -54,7 +54,7 @@ export const allExpandedServices: Service[] = [
     title: "Occupational Counselling",
     shortDescription: "Career guidance and workplace support to help you thrive professionally and maintain work-life balance.",
     fullDescription: "Our Occupational Counselling service helps professionals navigate career challenges, workplace stress, and work-life balance issues. We provide guidance on career transitions, workplace conflicts, professional development, and maintaining mental wellness in demanding work environments.",
-    image: chocolateWomanSmiling,
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
     benefits: [
       "Career clarity and direction",
       "Improved workplace relationships",
@@ -86,7 +86,7 @@ export const allExpandedServices: Service[] = [
     title: "Emotional Intelligence Counselling and Decision Making",
     shortDescription: "Develop emotional awareness and decision-making skills for better personal and professional relationships.",
     fullDescription: "This service focuses on enhancing your emotional intelligence - the ability to recognize, understand, and manage your emotions and those of others. We help you develop better decision-making skills, improve relationships, and navigate complex emotional situations with confidence.",
-    image: blackWomanSmiling,
+    image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=800&q=80",
     benefits: [
       "Enhanced self-awareness",
       "Better emotional regulation",
@@ -118,7 +118,7 @@ export const allExpandedServices: Service[] = [
     title: "Mindset Counselling",
     shortDescription: "Transform limiting beliefs and develop a growth mindset for personal and professional success.",
     fullDescription: "Our Mindset Counselling helps you identify and transform limiting beliefs, develop a growth mindset, and cultivate positive thinking patterns. We work with you to overcome mental barriers, build resilience, and create a mindset that supports your goals and aspirations.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
     benefits: [
       "Overcome limiting beliefs",
       "Develop growth mindset",
@@ -214,7 +214,7 @@ export const allExpandedServices: Service[] = [
     title: "Infidelity Management Coping",
     shortDescription: "Navigate the pain of infidelity and rebuild trust in your relationship with professional guidance.",
     fullDescription: "This specialized service helps couples and individuals cope with the aftermath of infidelity. We provide a safe space to process emotions, understand what happened, and decide whether to rebuild the relationship or move forward separately.",
-    image: blackWomanSmiling,
+    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     benefits: [
       "Process complex emotions safely",
       "Understand root causes",
@@ -246,7 +246,7 @@ export const allExpandedServices: Service[] = [
     title: "Work-Life Integration",
     shortDescription: "Achieve harmony between professional ambitions and personal well-being for a fulfilling life.",
     fullDescription: "Our Work-Life Integration counselling helps you create sustainable balance between career demands and personal life. We focus on integration rather than balance, helping you align your work with your values and maintain well-being while pursuing professional goals.",
-    image: chocolateWomanSmiling,
+    image: "https://images.unsplash.com/photo-1573496774426-fe3db3dd1731?w=800&q=80",
     benefits: [
       "Better time management",
       "Reduced burnout risk",
@@ -278,7 +278,7 @@ export const allExpandedServices: Service[] = [
     title: "Burnout Prevention and Management Counselling",
     shortDescription: "Prevent and recover from burnout with strategies for sustainable energy and well-being.",
     fullDescription: "This service addresses burnout prevention and recovery through comprehensive assessment, stress management, and lifestyle modifications. We help you recognize burnout signs early, implement preventive strategies, and recover if you're already experiencing burnout.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80",
     benefits: [
       "Prevent burnout before it starts",
       "Recover from existing burnout",
@@ -310,7 +310,7 @@ export const allExpandedServices: Service[] = [
     title: "Anxiety and Phobia Management Counselling",
     shortDescription: "Overcome anxiety disorders and phobias with evidence-based therapeutic interventions.",
     fullDescription: "Our Anxiety and Phobia Management service uses proven techniques including CBT, exposure therapy, and relaxation training to help you overcome anxiety disorders, panic attacks, and specific phobias. We provide tools to manage symptoms and regain control of your life.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
     benefits: [
       "Reduce anxiety symptoms",
       "Overcome specific phobias",
@@ -342,7 +342,7 @@ export const allExpandedServices: Service[] = [
     title: "Grief and Bereavement Intervention Counselling",
     shortDescription: "Compassionate support to help you navigate the grieving process and find healing after loss.",
     fullDescription: "Our Grief and Bereavement Counselling provides specialized support for individuals coping with loss. We understand that grief is unique and personal, offering a safe space to process emotions, honor your loss, and gradually move toward healing while maintaining emotional well-being.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
     benefits: [
       "Healthy grief processing",
       "Support through difficult transitions",
@@ -374,7 +374,7 @@ export const allExpandedServices: Service[] = [
     title: "Neurodiversity Confirmation Counselling",
     shortDescription: "Support for understanding and embracing neurodivergent identities with professional assessment and guidance.",
     fullDescription: "This service provides assessment, confirmation, and support for individuals exploring neurodivergent identities (ADHD, Autism, etc.). We offer comprehensive evaluations, psychoeducation, and strategies for thriving with neurodivergent traits.",
-    image: blackWomanSmiling,
+    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&q=80",
     benefits: [
       "Professional assessment and diagnosis",
       "Understanding your neurodivergence",
@@ -406,7 +406,7 @@ export const allExpandedServices: Service[] = [
     title: "Children, Teens and Adolescent Sexuality Education Counselling",
     shortDescription: "Age-appropriate sexuality education and counselling for young people and their families.",
     fullDescription: "We provide comprehensive, age-appropriate sexuality education and counselling for children, teens, and adolescents. Our approach is evidence-based, culturally sensitive, and focuses on healthy development, safety, and informed decision-making.",
-    image: chocolateWomanSmiling,
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
     benefits: [
       "Age-appropriate sex education",
       "Healthy relationship skills",
@@ -438,7 +438,7 @@ export const allExpandedServices: Service[] = [
     title: "Immunity Empowerment Counselling",
     shortDescription: "Build psychological resilience and strengthen your mental immune system against life's challenges.",
     fullDescription: "This unique service focuses on building psychological immunity - your mental resilience and ability to bounce back from adversity. We help you develop protective factors, strengthen coping mechanisms, and build lasting emotional resilience.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
     benefits: [
       "Enhanced psychological resilience",
       "Better stress resistance",
@@ -470,7 +470,7 @@ export const allExpandedServices: Service[] = [
     title: "Gender-Based Violence Counselling",
     shortDescription: "Trauma-informed support for survivors of gender-based violence with safety planning and healing.",
     fullDescription: "Our Gender-Based Violence counselling provides trauma-informed, culturally sensitive support for survivors. We offer crisis intervention, safety planning, trauma processing, and long-term healing support in a confidential, non-judgmental environment.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=800&q=80",
     benefits: [
       "Safe, confidential support",
       "Trauma processing and healing",
@@ -502,7 +502,7 @@ export const allExpandedServices: Service[] = [
     title: "Nutrition and Safe Life-Style Counselling",
     shortDescription: "Holistic guidance for healthy eating, lifestyle choices, and overall wellness.",
     fullDescription: "This service integrates mental health support with nutrition and lifestyle guidance. We help you develop healthy eating habits, make safe lifestyle choices, and address the psychological aspects of wellness, including emotional eating and body image.",
-    image: chocolateWomanSmiling,
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
     benefits: [
       "Healthier eating habits",
       "Improved body image",
@@ -534,7 +534,7 @@ export const allExpandedServices: Service[] = [
     title: "Relationship and Pre-Marital Counselling",
     shortDescription: "Expert guidance for couples building strong foundations and preparing for marriage.",
     fullDescription: "Our Relationship and Pre-Marital Counselling helps couples strengthen their bond, improve communication, and prepare for marriage. We address potential challenges, build conflict resolution skills, and create a strong foundation for lasting partnership.",
-    image: blackWomanSmiling,
+    image: "https://images.unsplash.com/photo-1522621032211-ac0031dfbddc?w=800&q=80",
     benefits: [
       "Improved communication",
       "Conflict resolution skills",
@@ -566,7 +566,7 @@ export const allExpandedServices: Service[] = [
     title: "Inter-Marriage and Conflict Resolution Counselling",
     shortDescription: "Navigate cultural differences and resolve conflicts in intercultural and interfaith marriages.",
     fullDescription: "This specialized service supports couples in intercultural or interfaith marriages. We help navigate cultural differences, family expectations, and unique challenges while building understanding, respect, and effective conflict resolution strategies.",
-    image: blackWomanSmiling,
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
     benefits: [
       "Navigate cultural differences",
       "Resolve intercultural conflicts",
@@ -598,7 +598,7 @@ export const allExpandedServices: Service[] = [
     title: "Parenting Counselling",
     shortDescription: "Support for parents navigating challenges and building strong, healthy family relationships.",
     fullDescription: "Our Parenting Counselling provides guidance for parents facing challenges at any stage. We offer evidence-based strategies for discipline, communication, developmental concerns, and building strong parent-child relationships.",
-    image: chocolateWomanSmiling,
+    image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&q=80",
     benefits: [
       "Effective parenting strategies",
       "Improved parent-child communication",
@@ -630,7 +630,7 @@ export const allExpandedServices: Service[] = [
     title: "Academic and Career Belief and Wellness Counselling in Schools",
     shortDescription: "Comprehensive support for students' academic success, career planning, and mental wellness.",
     fullDescription: "This school-based service provides holistic support for students, addressing academic performance, career planning, mental wellness, and personal development. We work with students, parents, and schools to create supportive environments for success.",
-    image: chocolateWomanSmiling,
+    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
     benefits: [
       "Improved academic performance",
       "Career clarity and planning",
