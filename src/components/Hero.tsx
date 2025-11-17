@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroPsychologist from "@/assets/black-truemo.png";
+import heroPsychologist from "@/assets/new-hero.png";
 import quote from '@/assets/quote.png';
 import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 
@@ -66,7 +66,7 @@ const Hero = () => {
             <img
               src={heroPsychologist}
               alt="Professional Psychologist"
-              className="w-[85%] sm:w-[65%] md:w-[90%] lg:w-[100%] max-w-[600px] h-auto object-contain drop-shadow-2xl"
+              className="w-[72%] sm:w-[65%] md:w-[80%] lg:w-[78%] max-w-[600px] h-auto object-contain drop-shadow-2xl rounded-3xl overflow-hidden -bottom-2"
             />
           </motion.div>
 

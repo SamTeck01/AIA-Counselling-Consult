@@ -88,9 +88,10 @@ const Testimonials = () => {
 
   // Animate both rows when page changes
   useEffect(() => {
-    const offset = -currentPage * 33.33; // Each page shifts by 1/3 of the width
+    const offset = -currentPage * 66.66; // Each page shifts by 1/3 of the width
+    const offset2 = -currentPage * 33.33; // Each page shifts by 1/3 of the width
     row1Controls.start({ x: `${offset}%`, transition: { duration: 0.8, ease: "easeInOut" } });
-    row2Controls.start({ x: `${offset}%`, transition: { duration: 0.8, ease: "easeInOut" } });
+    row2Controls.start({ x: `${offset2}%`, transition: { duration: 0.8, ease: "easeInOut" } });
   }, [currentPage, row1Controls, row2Controls]);
 
   const togglePlayPause = () => {
@@ -143,9 +144,9 @@ const Testimonials = () => {
                   custom={i}
                   initial="hidden"
                   animate={isInView ? "visible" : "hidden"}
-                  className="w-full md:w-[calc((100%-48px)/3)] flex-shrink-0"
+                  className="w-[90%] md:w-[calc((100%-48px)/3)] flex-shrink-0"
                 >
-                  <Card className="p-8 rounded-3xl bg-muted/30 border-0 h-full flex flex-col">
+                  <Card className="p-6 rounded-3xl bg-muted/30 border-0 h-full flex flex-col">
                     <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm">
                       "{testimonial.content}"
                     </p>
@@ -183,9 +184,9 @@ const Testimonials = () => {
                   custom={i + 6}
                   initial="hidden"
                   animate={isInView ? "visible" : "hidden"}
-                  className="w-full md:w-[calc((100%-48px)/3)] flex-shrink-0"
+                  className="w-[90%] md:w-[calc((100%-48px)/3)] flex-shrink-0"
                 >
-                  <Card className="p-8 rounded-3xl bg-muted/30 border-0 h-full flex flex-col">
+                  <Card className="p-6 rounded-3xl bg-muted/30 border-0 h-full flex flex-col">
                     <p className="text-muted-foreground mb-8 leading-relaxed flex-grow text-sm">
                       "{testimonial.content}"
                     </p>
