@@ -2,16 +2,13 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { LinkedinIcon, Mail, Twitter } from "lucide-react";
-import profile1 from '../assets/profile1.jpg'
-import profile2 from '../assets/profile 2.jpg'
-import profile3 from '../assets/profile 3.jpg'
-import profile4 from '../assets/profile 4.jpg'
+import profile from "../assets/profile.jpg";
 
 const teamMembers = [
   {
     name: "Engr. Tijani Kehinde Oladoke",
     role: "Director Technical Matters",
-    image: profile1,
+    image: profile,
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -21,7 +18,7 @@ const teamMembers = [
   {
     name: "Mr. Quadri Taiwo Oladoke",
     role: "Director Administration",
-    image: profile2,
+    image: profile,
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -31,7 +28,7 @@ const teamMembers = [
   {
     name: "Esv. Sekinat O. Oladoke Salami",
     role: "Director of Valuation and Planning Matters",
-    image: profile3,
+    image: profile,
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -41,7 +38,7 @@ const teamMembers = [
   {
     name: "Engr. Bilkis Oladoke Adediran",
     role: "Director ICT/MIS",
-    image: profile4,
+    image: profile,
     socials: {
       twitter: "#",
       linkedin: "#",
@@ -80,11 +77,11 @@ const Team = () => {
   };
 
   return (
-    <section id="team" className="mx-[2%] py-16 bg-primary relative overflow-hidden rounded-[38px]">
-      <div
-        ref={ref}
-        className="max-w-7xl mx-auto px-4"
-      >
+    <section
+      id="team"
+      className="mx-[2%] py-16 bg-primary relative overflow-hidden rounded-[38px]"
+    >
+      <div ref={ref} className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

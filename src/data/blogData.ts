@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "10 min read",
     category: "Mental Health",
     tags: ["Anxiety", "Mental Health", "Therapy", "Coping Skills"],
-    image: founder,
+    image: chocolateWomanSmiling,
     featured: true,
   },
   {

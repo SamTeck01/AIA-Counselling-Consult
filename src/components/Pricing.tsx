@@ -2,28 +2,34 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Plus, Minus, Phone } from "lucide-react";
-import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
+import { openWhatsApp, WHATSAPP_MESSAGES } from "@/utils/whatsapp";
+import profile from "@/assets/profile.jpg";
 
 const faqs = [
   {
     question: "What happens in the first consultation session?",
-    answer: "The first session is a Consultation/Diagnostic Session where the Counsellor/Therapist does case profiling and diagnoses the nature of the challenge, identifies clearer counselling/therapy goals, treatment plans and number of sessions required. Sessions typically start from ₦15,000 - ₦25,000 depending on nature of challenge, age of clients, mode of therapy (Online, Office or Outdoor, individual or Group), and location.",
+    answer:
+      "The first session is a Consultation/Diagnostic Session where the Counsellor/Therapist does case profiling and diagnoses the nature of the challenge, identifies clearer counselling/therapy goals, treatment plans and number of sessions required. Sessions typically start from ₦15,000 - ₦25,000 depending on nature of challenge, age of clients, mode of therapy (Online, Office or Outdoor, individual or Group), and location.",
   },
   {
     question: "What types of counselling sessions do you offer?",
-    answer: "We offer Regular Sessions (scheduled appointments based on identified needs and goals) and Irregular Sessions (as needed and convenient). Sessions can be conducted online (virtual), in-person at our office, or outdoor locations. We provide individual, couple, family, and corporate counselling sessions. Standard session time is between 40 minutes and 1 hour.",
+    answer:
+      "We offer Regular Sessions (scheduled appointments based on identified needs and goals) and Irregular Sessions (as needed and convenient). Sessions can be conducted online (virtual), in-person at our office, or outdoor locations. We provide individual, couple, family, and corporate counselling sessions. Standard session time is between 40 minutes and 1 hour.",
   },
   {
     question: "What is your approach to counselling?",
-    answer: "Ours is a result-oriented pragmatic counselling approach. We engage in an inclusive counselling style to problem solving with the unique purpose of uncovering the root causes of intractable issues. We treat the problem from the root and ensure an effective, enduring and sustainable solution with follow-up services, notwithstanding the age and status of our client.",
+    answer:
+      "Ours is a result-oriented pragmatic counselling approach. We engage in an inclusive counselling style to problem solving with the unique purpose of uncovering the root causes of intractable issues. We treat the problem from the root and ensure an effective, enduring and sustainable solution with follow-up services, notwithstanding the age and status of our client.",
   },
   {
     question: "What is your cancellation and appointment policy?",
-    answer: "We appreciate keeping scheduled appointments. Please notify us 24 hours (1 day) in advance if you need to cancel. In case of missed appointment without due notification, the counsellee shall forfeit the fee for the session where payment had already been made or could be obligated to pay 50% cost of session for no-show. Counselling can be terminated upon request by the counsellee at any stage.",
+    answer:
+      "We appreciate keeping scheduled appointments. Please notify us 24 hours (1 day) in advance if you need to cancel. In case of missed appointment without due notification, the counsellee shall forfeit the fee for the session where payment had already been made or could be obligated to pay 50% cost of session for no-show. Counselling can be terminated upon request by the counsellee at any stage.",
   },
   {
     question: "How do you ensure confidentiality?",
-    answer: "All interactions during counselling/therapy services, including scheduling of appointments, the content of your sessions, progress in counselling/therapy, and your records are completely confidential. No record of counselling/therapy is contained in any academic, educational, or job placement file. All your information is secured from third party access.",
+    answer:
+      "All interactions during counselling/therapy services, including scheduling of appointments, the content of your sessions, progress in counselling/therapy, and your records are completely confidential. No record of counselling/therapy is contained in any academic, educational, or job placement file. All your information is secured from third party access.",
   },
 ];
 
@@ -73,22 +79,22 @@ const Pricing = () => {
               <div className="flex items-center mb-2">
                 <div className="flex -space-x-3">
                   <img
-                    src="https://i.pravatar.cc/150?img=1"
+                    src={profile}
                     alt="Team member"
                     className="w-10 h-10 rounded-full border-2 border-primary"
                   />
                   <img
-                    src="https://i.pravatar.cc/150?img=5"
+                    src={profile}
                     alt="Team member"
                     className="w-10 h-10 rounded-full border-2 border-primary"
                   />
                   <img
-                    src="https://i.pravatar.cc/150?img=12"
+                    src={profile}
                     alt="Team member"
                     className="w-10 h-10 rounded-full border-2 border-primary"
                   />
                   <img
-                    src="https://i.pravatar.cc/150?img=8"
+                    src={profile}
                     alt="Team member"
                     className="w-10 h-10 rounded-full border-2 border-primary"
                   />
@@ -100,7 +106,9 @@ const Pricing = () => {
               </h3>
 
               <button
-                onClick={() => openWhatsApp(WHATSAPP_MESSAGES.GENERAL_INQUIRY, true)}
+                onClick={() =>
+                  openWhatsApp(WHATSAPP_MESSAGES.GENERAL_INQUIRY, true)
+                }
                 className="inline-flex items-center gap-3 text-white hover:opacity-80 transition-opacity"
               >
                 <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">

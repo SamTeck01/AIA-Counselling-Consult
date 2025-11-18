@@ -3,12 +3,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Play, Pause } from "lucide-react";
-import chocolateWomanSmiling from '@/assets/chocolate-woman-smiling.jpg';
-import blackWomanSmiling from '@/assets/black-woman-smiling.jpg';
-import founder from '@/assets/founder.jpg';
-import profile1 from '@/assets/profile1.jpg';
-import profile2 from '@/assets/profile 2.jpg';
-import profile3 from '@/assets/profile 3.jpg';
+import profile from "@/assets/profile.jpg";
 
 const testimonials = [
   {
@@ -16,42 +11,42 @@ const testimonials = [
     role: "15 years old",
     content:
       "Before my counselling sessions, I used to bottle up my feelings and get angry over everything. Talking with my counsellor helped me understand my emotions and express them better. I've learned to pause, breathe, and respond instead of react. I'm now more confident and happier with myself.",
-    avatar: profile1,
+    avatar: profile,
   },
   {
     name: "Mrs. Okonkwo",
     role: "Parent",
     content:
       "I can't thank you enough for what you've done for my daughter. She was struggling with self-esteem and anger outbursts, but through counselling, she has become calmer and more confident. She now opens up to me and communicates better. You've truly made a difference in our home.",
-    avatar: profile2,
+    avatar: profile,
   },
   {
     name: "Mr. Adeyemi",
     role: "Class Teacher",
     content:
       "The counselling sessions brought so much positive change among our students. Many of them are now more focused, respectful, and emotionally aware. The guidance given has not only improved their academics but also their attitude toward learning and life.",
-    avatar: founder,
+    avatar: profile,
   },
   {
     name: "Grace",
     role: "23 years old",
     content:
       "Counselling helped me heal from experiences I didn't even realize were holding me back. I learned to let go of guilt, set healthy boundaries, and rediscover my sense of purpose. I'm grateful for the safe and non-judgmental space that helped me grow emotionally and spiritually.",
-    avatar: profile3,
+    avatar: profile,
   },
   {
     name: "Mr. Hassan",
     role: "Parent",
     content:
       "My son was always withdrawn and easily distracted, but after his counselling sessions, he's become more expressive and attentive. The progress has been amazing, and I've learned a lot as a parent through the feedback sessions. This service is truly life-changing.",
-    avatar: blackWomanSmiling,
+    avatar: profile,
   },
   {
     name: "Chidera",
     role: "15 years old",
     content:
       "Before my counselling sessions, I used to bottle up my feelings and get angry over everything. Talking with my counsellor helped me understand my emotions and express them better. I've learned to pause, breathe, and respond instead of react. I'm now more confident and happier with myself.",
-    avatar: chocolateWomanSmiling,
+    avatar: profile,
   },
 ];
 
@@ -90,8 +85,14 @@ const Testimonials = () => {
   useEffect(() => {
     const offset = -currentPage * 66.66; // Each page shifts by 1/3 of the width
     const offset2 = -currentPage * 33.33; // Each page shifts by 1/3 of the width
-    row1Controls.start({ x: `${offset}%`, transition: { duration: 0.8, ease: "easeInOut" } });
-    row2Controls.start({ x: `${offset2}%`, transition: { duration: 0.8, ease: "easeInOut" } });
+    row1Controls.start({
+      x: `${offset}%`,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    });
+    row2Controls.start({
+      x: `${offset2}%`,
+      transition: { duration: 0.8, ease: "easeInOut" },
+    });
   }, [currentPage, row1Controls, row2Controls]);
 
   const togglePlayPause = () => {
@@ -157,8 +158,12 @@ const Testimonials = () => {
                         className="w-12 h-12 rounded-full object-cover"
                       />
                       <div>
-                        <h4 className="font-medium text-foreground">{testimonial.name}</h4>
-                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                        <h4 className="font-medium text-foreground">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          {testimonial.role}
+                        </p>
                       </div>
                     </div>
                   </Card>
@@ -197,8 +202,12 @@ const Testimonials = () => {
                         className="w-12 h-12 rounded-full object-cover"
                       />
                       <div>
-                        <h4 className="font-medium text-foreground">{testimonial.name}</h4>
-                        <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                        <h4 className="font-medium text-foreground">
+                          {testimonial.name}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          {testimonial.role}
+                        </p>
                       </div>
                     </div>
                   </Card>
@@ -214,9 +223,7 @@ const Testimonials = () => {
             onClick={togglePlayPause}
             className={cn(
               "w-8 h-8 rounded-full border flex items-center justify-center transition-all hover:border-foreground",
-              isPlaying
-                ? "border-foreground"
-                : "border-muted-foreground/30"
+              isPlaying ? "border-foreground" : "border-muted-foreground/30"
             )}
             aria-label={isPlaying ? "Pause" : "Play"}
           >
