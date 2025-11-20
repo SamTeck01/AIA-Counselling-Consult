@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import heroPsychologist from "@/assets/new-hero.png";
+import heroPsychologist from "@/assets/new_hero.png";
 import quote from '@/assets/quote.png';
 import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
 
