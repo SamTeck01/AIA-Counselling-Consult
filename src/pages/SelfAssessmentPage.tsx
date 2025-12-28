@@ -6,12 +6,12 @@ import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { getAllAssessments, assessmentCategories } from "@/data/assessmentData";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { 
-  Wind, 
-  Sparkles, 
-  HeartHandshake, 
-  Flame, 
-  Brain, 
+import {
+  Wind,
+  Sparkles,
+  HeartHandshake,
+  Flame,
+  Brain,
   Baby,
   Heart,
   HeartCrack,
@@ -19,7 +19,22 @@ import {
   Lightbulb,
   Briefcase,
   LucideIcon,
-  ArrowRight
+  ArrowRight,
+  Shield,
+  Puzzle,
+  Users,
+  Zap,
+  ShieldAlert,
+  Apple,
+  Users2,
+  Compass,
+  Flower2,
+  Coffee,
+  Globe,
+  ShieldCheck,
+  Accessibility,
+  Activity,
+  HeartPulse,
 } from "lucide-react";
 
 // Icon mapping
@@ -35,6 +50,21 @@ const iconMap: Record<string, LucideIcon> = {
   Scale,
   Lightbulb,
   Briefcase,
+  Shield,
+  Puzzle,
+  Users,
+  Zap,
+  ShieldAlert,
+  Apple,
+  Users2,
+  Compass,
+  Flower2,
+  Coffee,
+  Globe,
+  ShieldCheck,
+  Accessibility,
+  Activity,
+  HeartPulse,
 };
 
 export default function SelfAssessmentPage() {
@@ -45,9 +75,10 @@ export default function SelfAssessmentPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const filteredAssessments = selectedCategory === "All" 
-    ? assessments 
-    : assessments.filter(a => a.category === selectedCategory);
+  const filteredAssessments =
+    selectedCategory === "All"
+      ? assessments
+      : assessments.filter((a) => a.category === selectedCategory);
 
   return (
     <div className="min-h-screen overflow-x-hidden">
@@ -72,15 +103,17 @@ export default function SelfAssessmentPage() {
             <h1
               className="text-4xl md:text-5xl lg:text-6xl mb-6"
               style={{
-                fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                fontFamily:
+                  "'Playfair Display', Georgia, 'Times New Roman', serif",
                 fontWeight: 400,
               }}
             >
               Understand Yourself Better
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Take a free, confidential self-assessment to gain insights into your mental health 
-              and receive personalized recommendations for support.
+              Take a free, confidential self-assessment to gain insights into
+              your mental health and receive personalized recommendations for
+              support.
             </p>
 
             {/* Benefits */}
@@ -133,7 +166,7 @@ export default function SelfAssessmentPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredAssessments.map((assessment, index) => {
               const IconComponent = iconMap[assessment.icon];
-              
+
               return (
                 <motion.div
                   key={assessment.id}
@@ -145,7 +178,9 @@ export default function SelfAssessmentPage() {
                     <div className="group bg-white rounded-3xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 h-full p-8">
                       {/* Icon */}
                       <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
-                        {IconComponent && <IconComponent className="w-8 h-8 text-primary" />}
+                        {IconComponent && (
+                          <IconComponent className="w-8 h-8 text-primary" />
+                        )}
                       </div>
 
                       {/* Content */}
@@ -157,7 +192,8 @@ export default function SelfAssessmentPage() {
                           <h3
                             className="text-2xl mt-2 group-hover:text-primary transition-colors"
                             style={{
-                              fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                              fontFamily:
+                                "'Playfair Display', Georgia, 'Times New Roman', serif",
                               fontWeight: 400,
                             }}
                           >
@@ -195,18 +231,22 @@ export default function SelfAssessmentPage() {
             <h2
               className="text-3xl md:text-4xl mb-6"
               style={{
-                fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                fontFamily:
+                  "'Playfair Display', Georgia, 'Times New Roman', serif",
                 fontWeight: 400,
               }}
             >
               Need Professional Support?
             </h2>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Our experienced counsellors are here to provide personalized support for your
-              unique situation. Book a session today.
+              Our experienced counsellors are here to provide personalized
+              support for your unique situation. Book a session today.
             </p>
             <Link to="/#contact">
-              <Button size="lg" className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary font-semibold">
+              <Button
+                size="lg"
+                className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary font-semibold"
+              >
                 Contact Us
               </Button>
             </Link>
