@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { openWhatsApp, WHATSAPP_MESSAGES } from '@/utils/whatsapp';
-import { useNavigate } from "react-router-dom";
+import { openWhatsApp, WHATSAPP_MESSAGES } from "@/utils/whatsapp";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -18,10 +19,30 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+      return;
+    }
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
     setIsMobileMenuOpen(false);
   };
+
+  useEffect(() => {
+    if (
+      location.pathname === "/" &&
+      location.state &&
+      (location.state as any).scrollTo
+    ) {
+      const id = (location.state as any).scrollTo;
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        element?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+      // Clear the state so it doesn't scroll again on refresh
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
 
   return (
     <motion.header
@@ -29,7 +50,9 @@ const Header = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 w-full ${
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-lg" : "bg-background backdrop-blur-md"
+        isScrolled
+          ? "bg-white/80 backdrop-blur-md shadow-lg"
+          : "bg-background backdrop-blur-md"
       } `}
     >
       <div className="container mx-auto px-4">
@@ -41,9 +64,19 @@ const Header = () => {
             className="flex items-center gap-2 cursor-pointer justify-start"
             onClick={() => scrollToSection("home")}
           >
-            <div className="text-3xl font-light tracking-tight flex flex-row space-x-2 h-fit " onClick={() => navigate('/')} style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}>
+            <div
+              className="text-3xl font-light tracking-tight flex flex-row space-x-2 h-fit "
+              onClick={() => navigate("/")}
+              style={{
+                fontFamily:
+                  "'Playfair Display', Georgia, 'Times New Roman', serif",
+              }}
+            >
               <span className="text-primary">AIA</span>
-              <span className="hidden md:block text-foreground"> Counselling</span>
+              <span className="hidden md:block text-foreground">
+                {" "}
+                Counselling
+              </span>
               <span className=" text-primary"> Consult</span>
             </div>
           </motion.div>
@@ -53,10 +86,14 @@ const Header = () => {
               { label: "Home", action: "link", target: "/" },
               { label: "About", action: "scroll", target: "about" },
               { label: "Services", action: "link", target: "/services" },
-              { label: "Self-Assessment", action: "link", target: "/self-assessment" },
+              {
+                label: "Self-Assessment",
+                action: "link",
+                target: "/self-assessment",
+              },
               { label: "Blog", action: "link", target: "/blog" },
-              { label: "Contact", action: "scroll", target: "contact" }
-            ].map((item, index) => (
+              { label: "Contact", action: "scroll", target: "contact" },
+            ].map((item, index) =>
               item.action === "link" ? (
                 <motion.a
                   key={item.label}
@@ -65,7 +102,10 @@ const Header = () => {
                   transition={{ delay: 0.1 * index }}
                   href={item.target}
                   className="text-foreground/80 hover:text-primary transition-colors font-medium relative group"
-                  style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                  style={{
+                    fontFamily:
+                      "'Playfair Display', Georgia, 'Times New Roman', serif",
+                  }}
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -78,13 +118,16 @@ const Header = () => {
                   transition={{ delay: 0.1 * index }}
                   onClick={() => scrollToSection(item.target)}
                   className="text-foreground/80 hover:text-primary transition-colors font-medium relative group"
-                  style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                  style={{
+                    fontFamily:
+                      "'Playfair Display', Georgia, 'Times New Roman', serif",
+                  }}
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
                 </motion.button>
               )
-            ))}
+            )}
           </nav>
 
           <div className="flex items-center gap-4 justify-end">
@@ -126,16 +169,23 @@ const Header = () => {
                 { label: "Home", action: "link", target: "/" },
                 { label: "About", action: "scroll", target: "about" },
                 { label: "Services", action: "link", target: "/services" },
-                { label: "Self-Assessment", action: "link", target: "/self-assessment" },
+                {
+                  label: "Self-Assessment",
+                  action: "link",
+                  target: "/self-assessment",
+                },
                 { label: "Blog", action: "link", target: "/blog" },
-                { label: "Contact", action: "scroll", target: "contact" }
-              ].map((item) => (
+                { label: "Contact", action: "scroll", target: "contact" },
+              ].map((item) =>
                 item.action === "link" ? (
                   <a
                     key={item.label}
                     href={item.target}
                     className="text-foreground/80 hover:text-primary transition-colors font-medium text-left py-2"
-                    style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                    style={{
+                      fontFamily:
+                        "'Playfair Display', Georgia, 'Times New Roman', serif",
+                    }}
                   >
                     {item.label}
                   </a>
@@ -144,16 +194,22 @@ const Header = () => {
                     key={item.label}
                     onClick={() => scrollToSection(item.target)}
                     className="text-foreground/80 hover:text-primary transition-colors font-medium text-left py-2"
-                    style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                    style={{
+                      fontFamily:
+                        "'Playfair Display', Georgia, 'Times New Roman', serif",
+                    }}
                   >
                     {item.label}
                   </button>
                 )
-              ))}
+              )}
               <Button
                 onClick={() => openWhatsApp(WHATSAPP_MESSAGES.LETS_TALK)}
                 className="bg-[#E8F02C] text-primary hover:bg-[#E8F02C]/90 rounded-full w-full mt-2 font-semibold"
-                style={{ fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif" }}
+                style={{
+                  fontFamily:
+                    "'Playfair Display', Georgia, 'Times New Roman', serif",
+                }}
               >
                 Let's Talk
               </Button>

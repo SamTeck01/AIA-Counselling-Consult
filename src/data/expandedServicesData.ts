@@ -1,5 +1,5 @@
 // All images are Black people from Unsplash - contextually appropriate and unique for each service
-import trauma from '@/assets/trauma.jpg'
+import trauma from "@/assets/trauma.jpg";
 
 export interface Service {
   id: string;
@@ -20,31 +20,33 @@ export const allExpandedServices: Service[] = [
     id: "trauma-counselling",
     icon: "HeartCrack",
     title: "Trauma Counselling",
-    shortDescription: "Professional support for healing from traumatic experiences with evidence-based therapeutic approaches.",
-    fullDescription: "Our Trauma Counselling service provides specialized support for individuals who have experienced traumatic events. We use evidence-based approaches including EMDR, CBT, and trauma-focused therapy to help you process traumatic memories, reduce symptoms of PTSD, and regain a sense of safety and control in your life.",
+    shortDescription:
+      "Professional support for healing from traumatic experiences with evidence-based therapeutic approaches.",
+    fullDescription:
+      "Our Trauma Counselling service provides specialized support for individuals who have experienced traumatic events. We use evidence-based approaches including EMDR, CBT, and trauma-focused therapy to help you process traumatic memories, reduce symptoms of PTSD, and regain a sense of safety and control in your life.",
     image: trauma,
     benefits: [
       "Process traumatic memories safely",
       "Reduce PTSD symptoms",
       "Develop healthy coping mechanisms",
       "Regain sense of safety and control",
-      "Improve overall quality of life"
+      "Improve overall quality of life",
     ],
     whatToExpect: [
       "Safe, confidential environment",
       "Trauma-informed assessment",
       "Personalized treatment plan",
       "Evidence-based therapeutic techniques",
-      "Gradual processing at your pace"
+      "Gradual processing at your pace",
     ],
     whoItsFor: [
       "Survivors of abuse or violence",
       "Individuals with PTSD",
       "Those who experienced traumatic events",
       "People struggling with traumatic memories",
-      "Anyone seeking trauma recovery"
+      "Anyone seeking trauma recovery",
     ],
-    isFeatured: true
+    isFeatured: true,
   },
 
   // 2. Occupational Counselling
@@ -52,31 +54,34 @@ export const allExpandedServices: Service[] = [
     id: "occupational-counselling",
     icon: "Briefcase",
     title: "Occupational Counselling",
-    shortDescription: "Career guidance and workplace support to help you thrive professionally and maintain work-life balance.",
-    fullDescription: "Our Occupational Counselling service helps professionals navigate career challenges, workplace stress, and work-life balance issues. We provide guidance on career transitions, workplace conflicts, professional development, and maintaining mental wellness in demanding work environments.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+    shortDescription:
+      "Career guidance and workplace support to help you thrive professionally and maintain work-life balance.",
+    fullDescription:
+      "Our Occupational Counselling service helps professionals navigate career challenges, workplace stress, and work-life balance issues. We provide guidance on career transitions, workplace conflicts, professional development, and maintaining mental wellness in demanding work environments.",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
     benefits: [
       "Career clarity and direction",
       "Improved workplace relationships",
       "Better work-life balance",
       "Stress management strategies",
-      "Enhanced professional performance"
+      "Enhanced professional performance",
     ],
     whatToExpect: [
       "Career assessment and planning",
       "Workplace stress evaluation",
       "Conflict resolution strategies",
       "Professional development guidance",
-      "Ongoing support and coaching"
+      "Ongoing support and coaching",
     ],
     whoItsFor: [
       "Professionals facing career transitions",
       "Individuals with workplace stress",
       "Those experiencing burnout",
       "People with workplace conflicts",
-      "Anyone seeking career guidance"
+      "Anyone seeking career guidance",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 3. Emotional Intelligence Counselling
@@ -84,31 +89,34 @@ export const allExpandedServices: Service[] = [
     id: "emotional-intelligence-counselling",
     icon: "Brain",
     title: "Emotional Intelligence Counselling and Decision Making",
-    shortDescription: "Develop emotional awareness and decision-making skills for better personal and professional relationships.",
-    fullDescription: "This service focuses on enhancing your emotional intelligence - the ability to recognize, understand, and manage your emotions and those of others. We help you develop better decision-making skills, improve relationships, and navigate complex emotional situations with confidence.",
-    image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=800&q=80",
+    shortDescription:
+      "Develop emotional awareness and decision-making skills for better personal and professional relationships.",
+    fullDescription:
+      "This service focuses on enhancing your emotional intelligence - the ability to recognize, understand, and manage your emotions and those of others. We help you develop better decision-making skills, improve relationships, and navigate complex emotional situations with confidence.",
+    image:
+      "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=800&q=80",
     benefits: [
       "Enhanced self-awareness",
       "Better emotional regulation",
       "Improved decision-making skills",
       "Stronger relationships",
-      "Increased empathy and social skills"
+      "Increased empathy and social skills",
     ],
     whatToExpect: [
       "Emotional intelligence assessment",
       "Self-awareness exercises",
       "Decision-making frameworks",
       "Practical skill-building activities",
-      "Real-world application practice"
+      "Real-world application practice",
     ],
     whoItsFor: [
       "Leaders and managers",
       "Individuals seeking personal growth",
       "Those with relationship challenges",
       "People making important life decisions",
-      "Anyone wanting to improve EQ"
+      "Anyone wanting to improve EQ",
     ],
-    isFeatured: true
+    isFeatured: true,
   },
 
   // 4. Mindset Counselling
@@ -116,31 +124,34 @@ export const allExpandedServices: Service[] = [
     id: "mindset-counselling",
     icon: "Lightbulb",
     title: "Mindset Counselling",
-    shortDescription: "Transform limiting beliefs and develop a growth mindset for personal and professional success.",
-    fullDescription: "Our Mindset Counselling helps you identify and transform limiting beliefs, develop a growth mindset, and cultivate positive thinking patterns. We work with you to overcome mental barriers, build resilience, and create a mindset that supports your goals and aspirations.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
+    shortDescription:
+      "Transform limiting beliefs and develop a growth mindset for personal and professional success.",
+    fullDescription:
+      "Our Mindset Counselling helps you identify and transform limiting beliefs, develop a growth mindset, and cultivate positive thinking patterns. We work with you to overcome mental barriers, build resilience, and create a mindset that supports your goals and aspirations.",
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
     benefits: [
       "Overcome limiting beliefs",
       "Develop growth mindset",
       "Increased confidence and self-belief",
       "Better problem-solving abilities",
-      "Enhanced resilience"
+      "Enhanced resilience",
     ],
     whatToExpect: [
       "Belief system assessment",
       "Cognitive restructuring techniques",
       "Mindset shift exercises",
       "Goal-setting and achievement strategies",
-      "Ongoing mindset coaching"
+      "Ongoing mindset coaching",
     ],
     whoItsFor: [
       "Individuals feeling stuck",
       "Those with self-limiting beliefs",
       "People seeking personal transformation",
       "Anyone wanting to achieve more",
-      "Individuals facing major life changes"
+      "Individuals facing major life changes",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 5. Stress Management Counselling
@@ -148,31 +159,34 @@ export const allExpandedServices: Service[] = [
     id: "stress-management-counselling",
     icon: "Wind",
     title: "Stress Management Counselling",
-    shortDescription: "Learn effective techniques to manage stress and maintain mental wellness in your daily life.",
-    fullDescription: "Our Stress Management program teaches you practical, evidence-based techniques to identify, manage, and reduce stress. We help you understand stress sources, recognize your body's responses, and develop personalized coping strategies for maintaining balance and resilience.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    shortDescription:
+      "Learn effective techniques to manage stress and maintain mental wellness in your daily life.",
+    fullDescription:
+      "Our Stress Management program teaches you practical, evidence-based techniques to identify, manage, and reduce stress. We help you understand stress sources, recognize your body's responses, and develop personalized coping strategies for maintaining balance and resilience.",
+    image:
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
     benefits: [
       "Reduced stress and anxiety levels",
       "Improved physical and mental health",
       "Better work-life balance",
       "Enhanced coping skills",
-      "Increased resilience and well-being"
+      "Increased resilience and well-being",
     ],
     whatToExpect: [
       "Stress assessment and identification",
       "Relaxation and mindfulness training",
       "Cognitive-behavioral techniques",
       "Lifestyle and time management coaching",
-      "Ongoing practice and support"
+      "Ongoing practice and support",
     ],
     whoItsFor: [
       "Professionals with work stress",
       "Individuals with chronic stress",
       "Those seeking better balance",
       "People with stress-related health issues",
-      "Anyone wanting stress management skills"
+      "Anyone wanting stress management skills",
     ],
-    isFeatured: true
+    isFeatured: true,
   },
 
   // 6. Addiction Recovery Counselling
@@ -180,31 +194,34 @@ export const allExpandedServices: Service[] = [
     id: "addiction-recovery-counselling",
     icon: "Shield",
     title: "Addiction Recovery Counselling",
-    shortDescription: "Compassionate support for overcoming addiction and building a healthier, substance-free life.",
-    fullDescription: "Our Addiction Recovery Counselling provides comprehensive support for individuals struggling with substance abuse or behavioral addictions. We offer evidence-based treatment, relapse prevention strategies, and ongoing support to help you achieve and maintain recovery.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    shortDescription:
+      "Compassionate support for overcoming addiction and building a healthier, substance-free life.",
+    fullDescription:
+      "Our Addiction Recovery Counselling provides comprehensive support for individuals struggling with substance abuse or behavioral addictions. We offer evidence-based treatment, relapse prevention strategies, and ongoing support to help you achieve and maintain recovery.",
+    image:
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
     benefits: [
       "Break free from addiction",
       "Develop healthy coping mechanisms",
       "Rebuild relationships and trust",
       "Prevent relapse",
-      "Achieve long-term recovery"
+      "Achieve long-term recovery",
     ],
     whatToExpect: [
       "Comprehensive addiction assessment",
       "Personalized recovery plan",
       "Individual and group therapy",
       "Relapse prevention strategies",
-      "Family support and education"
+      "Family support and education",
     ],
     whoItsFor: [
       "Individuals with substance abuse issues",
       "Those with behavioral addictions",
       "People in early recovery",
       "Individuals seeking to prevent relapse",
-      "Family members of addicts"
+      "Family members of addicts",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 7. Infidelity Management Coping
@@ -212,31 +229,34 @@ export const allExpandedServices: Service[] = [
     id: "infidelity-management-coping",
     icon: "HeartHandshake",
     title: "Infidelity Management Coping",
-    shortDescription: "Navigate the pain of infidelity and rebuild trust in your relationship with professional guidance.",
-    fullDescription: "This specialized service helps couples and individuals cope with the aftermath of infidelity. We provide a safe space to process emotions, understand what happened, and decide whether to rebuild the relationship or move forward separately.",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    shortDescription:
+      "Navigate the pain of infidelity and rebuild trust in your relationship with professional guidance.",
+    fullDescription:
+      "This specialized service helps couples and individuals cope with the aftermath of infidelity. We provide a safe space to process emotions, understand what happened, and decide whether to rebuild the relationship or move forward separately.",
+    image:
+      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     benefits: [
       "Process complex emotions safely",
       "Understand root causes",
       "Rebuild trust (if desired)",
       "Make informed decisions",
-      "Heal from betrayal trauma"
+      "Heal from betrayal trauma",
     ],
     whatToExpect: [
       "Individual and couples sessions",
       "Emotional processing support",
       "Communication skill building",
       "Trust rebuilding strategies",
-      "Decision-making guidance"
+      "Decision-making guidance",
     ],
     whoItsFor: [
       "Couples dealing with infidelity",
       "Individuals betrayed by partners",
       "Those who committed infidelity",
       "Couples considering reconciliation",
-      "Anyone healing from betrayal"
+      "Anyone healing from betrayal",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 8. Work-Life Integration
@@ -244,31 +264,34 @@ export const allExpandedServices: Service[] = [
     id: "work-life-integration",
     icon: "Scale",
     title: "Work-Life Integration",
-    shortDescription: "Achieve harmony between professional ambitions and personal well-being for a fulfilling life.",
-    fullDescription: "Our Work-Life Integration counselling helps you create sustainable balance between career demands and personal life. We focus on integration rather than balance, helping you align your work with your values and maintain well-being while pursuing professional goals.",
-    image: "https://images.unsplash.com/photo-1573496774426-fe3db3dd1731?w=800&q=80",
+    shortDescription:
+      "Achieve harmony between professional ambitions and personal well-being for a fulfilling life.",
+    fullDescription:
+      "Our Work-Life Integration counselling helps you create sustainable balance between career demands and personal life. We focus on integration rather than balance, helping you align your work with your values and maintain well-being while pursuing professional goals.",
+    image:
+      "https://images.unsplash.com/photo-1573496774426-fe3db3dd1731?w=800&q=80",
     benefits: [
       "Better time management",
       "Reduced burnout risk",
       "Improved relationships",
       "Enhanced productivity",
-      "Greater life satisfaction"
+      "Greater life satisfaction",
     ],
     whatToExpect: [
       "Life and work assessment",
       "Priority identification",
       "Boundary-setting strategies",
       "Time management techniques",
-      "Ongoing integration coaching"
+      "Ongoing integration coaching",
     ],
     whoItsFor: [
       "Busy professionals",
       "Working parents",
       "Entrepreneurs and business owners",
       "Those feeling overwhelmed",
-      "Anyone seeking better integration"
+      "Anyone seeking better integration",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 9. Burnout Prevention and Management Counselling
@@ -276,31 +299,34 @@ export const allExpandedServices: Service[] = [
     id: "burnout-prevention-management",
     icon: "Flame",
     title: "Burnout Prevention and Management Counselling",
-    shortDescription: "Prevent and recover from burnout with strategies for sustainable energy and well-being.",
-    fullDescription: "This service addresses burnout prevention and recovery through comprehensive assessment, stress management, and lifestyle modifications. We help you recognize burnout signs early, implement preventive strategies, and recover if you're already experiencing burnout.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80",
+    shortDescription:
+      "Prevent and recover from burnout with strategies for sustainable energy and well-being.",
+    fullDescription:
+      "This service addresses burnout prevention and recovery through comprehensive assessment, stress management, and lifestyle modifications. We help you recognize burnout signs early, implement preventive strategies, and recover if you're already experiencing burnout.",
+    image:
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80",
     benefits: [
       "Prevent burnout before it starts",
       "Recover from existing burnout",
       "Sustainable energy management",
       "Improved work satisfaction",
-      "Better overall health"
+      "Better overall health",
     ],
     whatToExpect: [
       "Burnout risk assessment",
       "Energy management strategies",
       "Stress reduction techniques",
       "Lifestyle modification guidance",
-      "Long-term prevention planning"
+      "Long-term prevention planning",
     ],
     whoItsFor: [
       "High-achieving professionals",
       "Healthcare workers",
       "Caregivers",
       "Those experiencing exhaustion",
-      "Anyone at risk of burnout"
+      "Anyone at risk of burnout",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 10. Anxiety and Phobia Management Counselling
@@ -308,31 +334,34 @@ export const allExpandedServices: Service[] = [
     id: "anxiety-phobia-management",
     icon: "Sparkles",
     title: "Anxiety and Phobia Management Counselling",
-    shortDescription: "Overcome anxiety disorders and phobias with evidence-based therapeutic interventions.",
-    fullDescription: "Our Anxiety and Phobia Management service uses proven techniques including CBT, exposure therapy, and relaxation training to help you overcome anxiety disorders, panic attacks, and specific phobias. We provide tools to manage symptoms and regain control of your life.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
+    shortDescription:
+      "Overcome anxiety disorders and phobias with evidence-based therapeutic interventions.",
+    fullDescription:
+      "Our Anxiety and Phobia Management service uses proven techniques including CBT, exposure therapy, and relaxation training to help you overcome anxiety disorders, panic attacks, and specific phobias. We provide tools to manage symptoms and regain control of your life.",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80",
     benefits: [
       "Reduce anxiety symptoms",
       "Overcome specific phobias",
       "Prevent panic attacks",
       "Develop coping strategies",
-      "Regain confidence and freedom"
+      "Regain confidence and freedom",
     ],
     whatToExpect: [
       "Comprehensive anxiety assessment",
       "CBT and exposure therapy",
       "Relaxation and breathing techniques",
       "Gradual desensitization",
-      "Ongoing symptom management"
+      "Ongoing symptom management",
     ],
     whoItsFor: [
       "Individuals with anxiety disorders",
       "Those with specific phobias",
       "People experiencing panic attacks",
       "Anyone with excessive worry",
-      "Individuals seeking anxiety relief"
+      "Individuals seeking anxiety relief",
     ],
-    isFeatured: true
+    isFeatured: true,
   },
 
   // 11. Grief and Bereavement Intervention Counselling
@@ -340,31 +369,34 @@ export const allExpandedServices: Service[] = [
     id: "grief-bereavement-intervention",
     icon: "Heart",
     title: "Grief and Bereavement Intervention Counselling",
-    shortDescription: "Compassionate support to help you navigate the grieving process and find healing after loss.",
-    fullDescription: "Our Grief and Bereavement Counselling provides specialized support for individuals coping with loss. We understand that grief is unique and personal, offering a safe space to process emotions, honor your loss, and gradually move toward healing while maintaining emotional well-being.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+    shortDescription:
+      "Compassionate support to help you navigate the grieving process and find healing after loss.",
+    fullDescription:
+      "Our Grief and Bereavement Counselling provides specialized support for individuals coping with loss. We understand that grief is unique and personal, offering a safe space to process emotions, honor your loss, and gradually move toward healing while maintaining emotional well-being.",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
     benefits: [
       "Healthy grief processing",
       "Support through difficult transitions",
       "Tools for coping with loss",
       "Reduced feelings of isolation",
-      "Path toward healing and acceptance"
+      "Path toward healing and acceptance",
     ],
     whatToExpect: [
       "Compassionate listening and validation",
       "Grief education and normalization",
       "Emotional processing techniques",
       "Coping strategy development",
-      "Support for creating new meaning"
+      "Support for creating new meaning",
     ],
     whoItsFor: [
       "Individuals who lost loved ones",
       "Those with anticipatory grief",
       "People dealing with multiple losses",
       "Individuals with complicated grief",
-      "Anyone needing bereavement support"
+      "Anyone needing bereavement support",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 12. Neurodiversity Confirmation Counselling
@@ -372,31 +404,34 @@ export const allExpandedServices: Service[] = [
     id: "neurodiversity-confirmation",
     icon: "Puzzle",
     title: "Neurodiversity Confirmation Counselling",
-    shortDescription: "Support for understanding and embracing neurodivergent identities with professional assessment and guidance.",
-    fullDescription: "This service provides assessment, confirmation, and support for individuals exploring neurodivergent identities (ADHD, Autism, etc.). We offer comprehensive evaluations, psychoeducation, and strategies for thriving with neurodivergent traits.",
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&q=80",
+    shortDescription:
+      "Support for understanding and embracing neurodivergent identities with professional assessment and guidance.",
+    fullDescription:
+      "This service provides assessment, confirmation, and support for individuals exploring neurodivergent identities (ADHD, Autism, etc.). We offer comprehensive evaluations, psychoeducation, and strategies for thriving with neurodivergent traits.",
+    image:
+      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&q=80",
     benefits: [
       "Professional assessment and diagnosis",
       "Understanding your neurodivergence",
       "Tailored coping strategies",
       "Self-acceptance and advocacy",
-      "Access to appropriate support"
+      "Access to appropriate support",
     ],
     whatToExpect: [
       "Comprehensive assessment",
       "Diagnostic clarification",
       "Psychoeducation about neurodiversity",
       "Personalized support strategies",
-      "Ongoing counselling and advocacy"
+      "Ongoing counselling and advocacy",
     ],
     whoItsFor: [
       "Individuals suspecting neurodivergence",
       "Those seeking formal diagnosis",
       "Parents of neurodivergent children",
       "Adults with late diagnosis",
-      "Anyone seeking neurodiversity support"
+      "Anyone seeking neurodiversity support",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 13. Children, Teens and Adolescent Sexuality Education Counselling
@@ -404,31 +439,34 @@ export const allExpandedServices: Service[] = [
     id: "adolescent-sexuality-education",
     icon: "Users",
     title: "Children, Teens and Adolescent Sexuality Education Counselling",
-    shortDescription: "Age-appropriate sexuality education and counselling for young people and their families.",
-    fullDescription: "We provide comprehensive, age-appropriate sexuality education and counselling for children, teens, and adolescents. Our approach is evidence-based, culturally sensitive, and focuses on healthy development, safety, and informed decision-making.",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+    shortDescription:
+      "Age-appropriate sexuality education and counselling for young people and their families.",
+    fullDescription:
+      "We provide comprehensive, age-appropriate sexuality education and counselling for children, teens, and adolescents. Our approach is evidence-based, culturally sensitive, and focuses on healthy development, safety, and informed decision-making.",
+    image:
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
     benefits: [
       "Age-appropriate sex education",
       "Healthy relationship skills",
       "Body autonomy and safety",
       "Informed decision-making",
-      "Open parent-child communication"
+      "Open parent-child communication",
     ],
     whatToExpect: [
       "Developmentally appropriate education",
       "Safe space for questions",
       "Family involvement (as appropriate)",
       "Cultural sensitivity",
-      "Ongoing support and guidance"
+      "Ongoing support and guidance",
     ],
     whoItsFor: [
       "Children and adolescents",
       "Parents seeking guidance",
       "Teens with questions about sexuality",
       "Families wanting open communication",
-      "Schools and youth organizations"
+      "Schools and youth organizations",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 14. Immunity Empowerment Counselling
@@ -436,31 +474,34 @@ export const allExpandedServices: Service[] = [
     id: "immunity-empowerment",
     icon: "Zap",
     title: "Immunity Empowerment Counselling",
-    shortDescription: "Build psychological resilience and strengthen your mental immune system against life's challenges.",
-    fullDescription: "This unique service focuses on building psychological immunity - your mental resilience and ability to bounce back from adversity. We help you develop protective factors, strengthen coping mechanisms, and build lasting emotional resilience.",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
+    shortDescription:
+      "Build psychological resilience and strengthen your mental immune system against life's challenges.",
+    fullDescription:
+      "This unique service focuses on building psychological immunity - your mental resilience and ability to bounce back from adversity. We help you develop protective factors, strengthen coping mechanisms, and build lasting emotional resilience.",
+    image:
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
     benefits: [
       "Enhanced psychological resilience",
       "Better stress resistance",
       "Improved coping abilities",
       "Faster recovery from setbacks",
-      "Stronger mental health foundation"
+      "Stronger mental health foundation",
     ],
     whatToExpect: [
       "Resilience assessment",
       "Protective factor development",
       "Coping skill enhancement",
       "Stress inoculation training",
-      "Long-term resilience building"
+      "Long-term resilience building",
     ],
     whoItsFor: [
       "Individuals facing chronic stress",
       "Those wanting to build resilience",
       "People in high-pressure careers",
       "Anyone seeking preventive mental health",
-      "Individuals preparing for challenges"
+      "Individuals preparing for challenges",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 15. Gender-Based Violence
@@ -468,31 +509,34 @@ export const allExpandedServices: Service[] = [
     id: "gender-based-violence",
     icon: "ShieldAlert",
     title: "Gender-Based Violence Counselling",
-    shortDescription: "Trauma-informed support for survivors of gender-based violence with safety planning and healing.",
-    fullDescription: "Our Gender-Based Violence counselling provides trauma-informed, culturally sensitive support for survivors. We offer crisis intervention, safety planning, trauma processing, and long-term healing support in a confidential, non-judgmental environment.",
-    image: "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=800&q=80",
+    shortDescription:
+      "Trauma-informed support for survivors of gender-based violence with safety planning and healing.",
+    fullDescription:
+      "Our Gender-Based Violence counselling provides trauma-informed, culturally sensitive support for survivors. We offer crisis intervention, safety planning, trauma processing, and long-term healing support in a confidential, non-judgmental environment.",
+    image:
+      "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=800&q=80",
     benefits: [
       "Safe, confidential support",
       "Trauma processing and healing",
       "Safety planning assistance",
       "Empowerment and advocacy",
-      "Connection to resources"
+      "Connection to resources",
     ],
     whatToExpect: [
       "Trauma-informed approach",
       "Crisis intervention if needed",
       "Safety assessment and planning",
       "Emotional support and validation",
-      "Referrals to additional services"
+      "Referrals to additional services",
     ],
     whoItsFor: [
       "Survivors of domestic violence",
       "Victims of sexual assault",
       "Those experiencing abuse",
       "Individuals seeking safety",
-      "Anyone affected by GBV"
+      "Anyone affected by GBV",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 16. Nutrition and Safe Life-Style Counselling
@@ -500,31 +544,34 @@ export const allExpandedServices: Service[] = [
     id: "nutrition-lifestyle",
     icon: "Apple",
     title: "Nutrition and Safe Life-Style Counselling",
-    shortDescription: "Holistic guidance for healthy eating, lifestyle choices, and overall wellness.",
-    fullDescription: "This service integrates mental health support with nutrition and lifestyle guidance. We help you develop healthy eating habits, make safe lifestyle choices, and address the psychological aspects of wellness, including emotional eating and body image.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+    shortDescription:
+      "Holistic guidance for healthy eating, lifestyle choices, and overall wellness.",
+    fullDescription:
+      "This service integrates mental health support with nutrition and lifestyle guidance. We help you develop healthy eating habits, make safe lifestyle choices, and address the psychological aspects of wellness, including emotional eating and body image.",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
     benefits: [
       "Healthier eating habits",
       "Improved body image",
       "Better lifestyle choices",
       "Enhanced overall wellness",
-      "Sustainable healthy behaviors"
+      "Sustainable healthy behaviors",
     ],
     whatToExpect: [
       "Holistic wellness assessment",
       "Nutrition and lifestyle education",
       "Behavioral change strategies",
       "Emotional eating support",
-      "Ongoing wellness coaching"
+      "Ongoing wellness coaching",
     ],
     whoItsFor: [
       "Individuals wanting healthier lifestyles",
       "Those with emotional eating",
       "People with body image concerns",
       "Anyone seeking holistic wellness",
-      "Individuals making lifestyle changes"
+      "Individuals making lifestyle changes",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 17. Relationship and Pre-Marital Counselling
@@ -532,31 +579,34 @@ export const allExpandedServices: Service[] = [
     id: "relationship-premarital",
     icon: "HeartHandshake",
     title: "Relationship and Pre-Marital Counselling",
-    shortDescription: "Expert guidance for couples building strong foundations and preparing for marriage.",
-    fullDescription: "Our Relationship and Pre-Marital Counselling helps couples strengthen their bond, improve communication, and prepare for marriage. We address potential challenges, build conflict resolution skills, and create a strong foundation for lasting partnership.",
-    image: "https://images.unsplash.com/photo-1522621032211-ac0031dfbddc?w=800&q=80",
+    shortDescription:
+      "Expert guidance for couples building strong foundations and preparing for marriage.",
+    fullDescription:
+      "Our Relationship and Pre-Marital Counselling helps couples strengthen their bond, improve communication, and prepare for marriage. We address potential challenges, build conflict resolution skills, and create a strong foundation for lasting partnership.",
+    image:
+      "https://images.unsplash.com/photo-1522621032211-ac0031dfbddc?w=800&q=80",
     benefits: [
       "Improved communication",
       "Conflict resolution skills",
       "Stronger emotional connection",
       "Marriage preparation",
-      "Long-term relationship success"
+      "Long-term relationship success",
     ],
     whatToExpect: [
       "Relationship assessment",
       "Communication training",
       "Conflict resolution practice",
       "Marriage preparation topics",
-      "Ongoing couples support"
+      "Ongoing couples support",
     ],
     whoItsFor: [
       "Couples preparing for marriage",
       "Partners wanting to strengthen bond",
       "Those with communication issues",
       "Couples facing challenges",
-      "Anyone investing in relationship"
+      "Anyone investing in relationship",
     ],
-    isFeatured: true
+    isFeatured: true,
   },
 
   // 18. Inter-Marriage and Conflict Resolution Counselling
@@ -564,31 +614,34 @@ export const allExpandedServices: Service[] = [
     id: "inter-marriage-conflict",
     icon: "Users2",
     title: "Inter-Marriage and Conflict Resolution Counselling",
-    shortDescription: "Navigate cultural differences and resolve conflicts in intercultural and interfaith marriages.",
-    fullDescription: "This specialized service supports couples in intercultural or interfaith marriages. We help navigate cultural differences, family expectations, and unique challenges while building understanding, respect, and effective conflict resolution strategies.",
-    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+    shortDescription:
+      "Navigate cultural differences and resolve conflicts in intercultural and interfaith marriages.",
+    fullDescription:
+      "This specialized service supports couples in intercultural or interfaith marriages. We help navigate cultural differences, family expectations, and unique challenges while building understanding, respect, and effective conflict resolution strategies.",
+    image:
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
     benefits: [
       "Navigate cultural differences",
       "Resolve intercultural conflicts",
       "Build mutual understanding",
       "Manage family expectations",
-      "Strengthen intercultural bond"
+      "Strengthen intercultural bond",
     ],
     whatToExpect: [
       "Cultural sensitivity assessment",
       "Conflict resolution strategies",
       "Family dynamics navigation",
       "Communication across cultures",
-      "Ongoing intercultural support"
+      "Ongoing intercultural support",
     ],
     whoItsFor: [
       "Intercultural couples",
       "Interfaith marriages",
       "Couples with cultural conflicts",
       "Those managing family expectations",
-      "Anyone in cross-cultural relationships"
+      "Anyone in cross-cultural relationships",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 19. Parenting Counselling
@@ -596,31 +649,34 @@ export const allExpandedServices: Service[] = [
     id: "parenting-counselling",
     icon: "Baby",
     title: "Parenting Counselling",
-    shortDescription: "Support for parents navigating challenges and building strong, healthy family relationships.",
-    fullDescription: "Our Parenting Counselling provides guidance for parents facing challenges at any stage. We offer evidence-based strategies for discipline, communication, developmental concerns, and building strong parent-child relationships.",
-    image: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&q=80",
+    shortDescription:
+      "Support for parents navigating challenges and building strong, healthy family relationships.",
+    fullDescription:
+      "Our Parenting Counselling provides guidance for parents facing challenges at any stage. We offer evidence-based strategies for discipline, communication, developmental concerns, and building strong parent-child relationships.",
+    image:
+      "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=800&q=80",
     benefits: [
       "Effective parenting strategies",
       "Improved parent-child communication",
       "Better behavior management",
       "Reduced parenting stress",
-      "Stronger family relationships"
+      "Stronger family relationships",
     ],
     whatToExpect: [
       "Parenting style assessment",
       "Age-appropriate strategies",
       "Communication skill building",
       "Behavior management techniques",
-      "Ongoing parenting support"
+      "Ongoing parenting support",
     ],
     whoItsFor: [
       "New parents",
       "Parents of teenagers",
       "Those with behavioral challenges",
       "Single parents",
-      "Anyone seeking parenting guidance"
+      "Anyone seeking parenting guidance",
     ],
-    isFeatured: false
+    isFeatured: false,
   },
 
   // 20. Academic and Career Belief and Wellness Counselling in Schools
@@ -628,39 +684,394 @@ export const allExpandedServices: Service[] = [
     id: "academic-career-wellness",
     icon: "GraduationCap",
     title: "Academic and Career Belief and Wellness Counselling in Schools",
-    shortDescription: "Comprehensive support for students' academic success, career planning, and mental wellness.",
-    fullDescription: "This school-based service provides holistic support for students, addressing academic performance, career planning, mental wellness, and personal development. We work with students, parents, and schools to create supportive environments for success.",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+    shortDescription:
+      "Comprehensive support for students' academic success, career planning, and mental wellness.",
+    fullDescription:
+      "This school-based service provides holistic support for students, addressing academic performance, career planning, mental wellness, and personal development. We work with students, parents, and schools to create supportive environments for success.",
+    image:
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
     benefits: [
       "Improved academic performance",
       "Career clarity and planning",
       "Better mental wellness",
       "Enhanced self-confidence",
-      "Successful school experience"
+      "Successful school experience",
     ],
     whatToExpect: [
       "Academic and career assessment",
       "Study skills development",
       "Career exploration",
       "Mental wellness support",
-      "School-family collaboration"
+      "School-family collaboration",
     ],
     whoItsFor: [
       "Students at all levels",
       "Those with academic struggles",
       "Students planning careers",
       "Individuals with school stress",
-      "Parents and educators"
+      "Parents and educators",
     ],
-    isFeatured: false
-  }
+    isFeatured: false,
+  },
+
+  // 21. Mental Health and Holistic Wellness Counselling
+  {
+    id: "mental-health-holistic-wellness",
+    icon: "Sparkles",
+    title: "Mental Health and Holistic Wellness Counselling",
+    shortDescription:
+      "A holistic approach to mental health that integrates mind, body, and spirit for complete well-being.",
+    fullDescription:
+      "Our Holistic Wellness service goes beyond traditional therapy by addressing the interconnectedness of your mental, physical, and emotional health. We combine evidence-based psychological practices with holistic wellness strategies to help you achieve a balanced and fulfilling life.",
+    image:
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+    benefits: [
+      "Integrated approach to well-being",
+      "Enhanced self-awareness and mind-body connection",
+      "Sustainable lifestyle improvements",
+      "Reduced stress and increased vitality",
+      "Personalized wellness toolkit",
+    ],
+    whatToExpect: [
+      "Comprehensive wellness assessment",
+      "Holistic goal-setting",
+      "Integration of mindfulness and lifestyle habits",
+      "Support for mental and emotional balance",
+      "Collaborative wellness planning",
+    ],
+    whoItsFor: [
+      "Individuals seeking a balanced lifestyle",
+      "People wanting to integrate physical and mental health",
+      "Those experiencing chronic stress or fatigue",
+      "Anyone interested in preventive mental health",
+      "Individuals seeking personal growth",
+    ],
+    isFeatured: false,
+  },
+
+  // 22. Life Transition Counselling
+  {
+    id: "life-transition-counselling",
+    icon: "Compass",
+    title: "Life Transition Counselling",
+    shortDescription:
+      "Expert guidance for navigating major life changes with confidence and resilience.",
+    fullDescription:
+      "Life transitions—whether planned or unexpected—can be overwhelming. Our Life Transition Counselling provides the support and tools you need to navigate changes like career shifts, relocation, relationship changes, or entering new stages of life with clarity and confidence.",
+    image:
+      "https://images.unsplash.com/photo-1528605248644-14dd04cb2201?w=800&q=80",
+    benefits: [
+      "Clarity during times of uncertainty",
+      "Reduced anxiety about the future",
+      "Improved decision-making skills",
+      "Enhanced adaptability and resilience",
+      "A sense of purpose and direction",
+    ],
+    whatToExpect: [
+      "Exploration of your transition challenges",
+      "Identification of strengths and resources",
+      "Practical strategy development",
+      "Emotional support during change",
+      "Goal-setting for your new chapter",
+    ],
+    whoItsFor: [
+      "Individuals facing career changes",
+      "People navigating empty nest or retirement",
+      "Those experiencing relocation or divorce",
+      "Young adults entering the workforce",
+      "Anyone feeling stuck in a life change",
+    ],
+    isFeatured: false,
+  },
+
+  // 23. Fertility and Reproductive Health Counselling
+  {
+    id: "fertility-reproductive-health",
+    icon: "Flower2",
+    title: "Fertility and Reproductive Health Counselling",
+    shortDescription:
+      "Compassionate support for individuals and couples navigating fertility challenges and reproductive health journeys.",
+    fullDescription:
+      "The journey to parenthood and reproductive health can be emotionally taxing. We provide a safe space to process the complex emotions surrounding fertility treatments, pregnancy loss, and reproductive health concerns, offering support for both individuals and couples.",
+    image:
+      "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=800&q=80",
+    benefits: [
+      "Emotional support through fertility treatments",
+      "Coping strategies for reproductive stress",
+      "Strengthened partnership during challenges",
+      "Processing of grief and loss",
+      "Informed decision-making support",
+    ],
+    whatToExpect: [
+      "Empathetic and non-judgmental environment",
+      "Communication tools for couples",
+      "Stress management techniques",
+      "Support for various reproductive paths",
+      "Validation of your unique experience",
+    ],
+    whoItsFor: [
+      "Individuals/couples facing infertility",
+      "Those undergoing IVF or other treatments",
+      "People navigating pregnancy loss",
+      "Individuals with reproductive health conditions",
+      "Anyone needing support in their family-building journey",
+    ],
+    isFeatured: false,
+  },
+
+  // 24. Retirement Counselling
+  {
+    id: "retirement-counselling",
+    icon: "Coffee",
+    title: "Retirement Counselling",
+    shortDescription:
+      "Psychological preparation for a fulfilling and purposeful retirement life.",
+    fullDescription:
+      "Retirement is more than a financial milestone; it's a significant life transition. Our Retirement Counselling helps you prepare for the psychological and social aspects of retirement, helping you rediscover your identity and create a meaningful plan for your post-career years.",
+    image:
+      "https://images.unsplash.com/photo-1501333194091-26388ff2c1e1?w=800&q=80",
+    benefits: [
+      "Smooth transition from work to retirement",
+      "Rediscovery of purpose and identity",
+      "Enhanced social connection strategies",
+      "Management of retirement-related anxiety",
+      "Creation of a fulfilling lifestyle plan",
+    ],
+    whatToExpect: [
+      "Identity and values exploration",
+      "Goal-setting for retirement years",
+      "Social network assessment",
+      "Time management and hobby exploration",
+      "Ongoing support during the transition",
+    ],
+    whoItsFor: [
+      "Individuals nearing retirement age",
+      "Recently retired people feeling lost",
+      "Partners of retirees",
+      "Those anxious about leaving their career",
+      "Anyone seeking a purposeful second act",
+    ],
+    isFeatured: false,
+  },
+
+  // 25. Human Rights Counselling
+  {
+    id: "human-rights-counselling",
+    icon: "Globe",
+    title: "Human Rights Counselling",
+    shortDescription:
+      "Support for individuals whose rights have been violated, focusing on empowerment and advocacy.",
+    fullDescription:
+      "Human Rights Counselling provides a supportive space for individuals who have experienced discrimination, injustice, or rights violations. We focus on healing from the trauma of injustice while empowering you with the tools for self-advocacy and resilience.",
+    image:
+      "https://images.unsplash.com/photo-1589216532372-2c27bd290b1e?w=800&q=80",
+    benefits: [
+      "Validation of your experiences",
+      "Empowerment through rights awareness",
+      "Trauma-informed healing from injustice",
+      "Enhanced self-advocacy skills",
+      "Connection to support networks",
+    ],
+    whatToExpect: [
+      "Safe space to share your story",
+      "Rights-based approach to counselling",
+      "Advocacy and resource guidance",
+      "Empowerment-focused goal setting",
+      "Support for navigating systems",
+    ],
+    whoItsFor: [
+      "Survivors of discrimination",
+      "Individuals facing systemic injustice",
+      "Activists experiencing burnout",
+      "Those seeking to understand their rights",
+      "Anyone impacted by human rights violations",
+    ],
+    isFeatured: false,
+  },
+
+  // 26. Women Human Rights Counselling
+  {
+    id: "women-human-rights-counselling",
+    icon: "ShieldCheck",
+    title: "Women Human Rights Counselling",
+    shortDescription:
+      "Specialized support for women's rights issues, focusing on empowerment and equality.",
+    fullDescription:
+      "This service addresses the unique challenges and rights violations faced by women. We provide a gender-sensitive approach to counselling, focusing on issues like gender discrimination, reproductive rights, and empowerment in both private and public spheres.",
+    image:
+      "https://images.unsplash.com/photo-1484863137850-59af6d812639?w=800&q=80",
+    benefits: [
+      "Gender-sensitive emotional support",
+      "Empowerment within personal and professional life",
+      "Understanding of women's rights and protections",
+      "Enhanced self-esteem and agency",
+      "Connection to women's support communities",
+    ],
+    whatToExpect: [
+      "Safe space for women's unique experiences",
+      "Focus on empowerment and equality",
+      "Rights-based advocacy support",
+      "Self-care and resilience building",
+      "Collaborative problem-solving",
+    ],
+    whoItsFor: [
+      "Women facing gender-based discrimination",
+      "Survivors of rights violations",
+      "Women seeking to build self-agency",
+      "Those navigating workplace inequality",
+      "Anyone passionate about women's rights",
+    ],
+    isFeatured: false,
+  },
+
+  // 27. Special Needs Counselling
+  {
+    id: "special-needs-counselling",
+    icon: "Accessibility",
+    title: "Special Needs Counselling",
+    shortDescription:
+      "Dedicated support for individuals with special needs and their families to thrive.",
+    fullDescription:
+      "Our Special Needs Counselling offers tailored support for individuals living with disabilities or neurodivergence, as well as their caregivers. We focus on enhancing quality of life, developing coping strategies, and fostering independence and inclusion.",
+    image:
+      "https://images.unsplash.com/photo-1508847154043-be5407fcaa5a?w=800&q=80",
+    benefits: [
+      "Improved quality of life and independence",
+      "Enhanced coping skills for families",
+      "Better understanding of unique needs",
+      "Access to appropriate resources",
+      "Empowerment for self-advocacy",
+    ],
+    whatToExpect: [
+      "Personalized assessment of needs",
+      "Skill-building and developmental support",
+      "Family and caregiver counselling",
+      "Collaboration with other providers",
+      "Compassionate, long-term support",
+    ],
+    whoItsFor: [
+      "Individuals with physical or cognitive disabilities",
+      "Neurodivergent individuals",
+      "Parents and siblings of children with special needs",
+      "Caregivers needing emotional support",
+      "Educators and support staff",
+    ],
+    isFeatured: false,
+  },
+
+  // 28. Behaviour Modification Counselling
+  {
+    id: "behaviour-modification-counselling",
+    icon: "Activity",
+    title: "Behaviour Modification Counselling",
+    shortDescription:
+      "Practical strategies to change unwanted patterns and develop healthy, positive behaviours.",
+    fullDescription:
+      "Behaviour Modification Counselling uses evidence-based techniques to help you identify and change problematic habits or patterns. We work together to set clear goals and implement strategies that reinforce positive behaviours and lead to lasting change.",
+    image:
+      "https://images.unsplash.com/photo-1516302752625-fbc4c503efd3?w=800&q=80",
+    benefits: [
+      "Replacement of harmful habits with positive ones",
+      "Improved self-control and discipline",
+      "Enhanced problem-solving abilities",
+      "Increased confidence in personal change",
+      "Measurable progress toward goals",
+    ],
+    whatToExpect: [
+      "Identification of target behaviours",
+      "Functional assessment of behaviour patterns",
+      "Development of a modification plan",
+      "Skill-building and reinforcement techniques",
+      "Regular progress monitoring",
+    ],
+    whoItsFor: [
+      "Individuals wanting to break habits",
+      "People with impulse control challenges",
+      "Those seeking better productivity or focus",
+      "Anyone wanting to adopt healthier routines",
+      "Individuals with specific behavioural goals",
+    ],
+    isFeatured: false,
+  },
+
+  // 29. Single Parenting Counselling
+  {
+    id: "single-parenting-counselling",
+    icon: "HeartPulse",
+    title: "Single Parenting Counselling",
+    shortDescription:
+      "Support and strategies for the unique challenges and triumphs of single-parent households.",
+    fullDescription:
+      "Single parenting comes with a unique set of demands and rewards. Our counselling provides a supportive space to manage parenting stress, navigate co-parenting dynamics (if applicable), and build a strong, loving home while maintaining your own well-being.",
+    image:
+      "https://images.unsplash.com/photo-1536640712247-3a97c7c3972c?w=800&q=80",
+    benefits: [
+      "Reduced parenting stress and burnout",
+      "Effective solo-parenting strategies",
+      "Improved family communication",
+      "Better work-life-parenting balance",
+      "Enhanced self-care for the parent",
+    ],
+    whatToExpect: [
+      "Validation of single-parenting challenges",
+      "Practical problem-solving for daily life",
+      "Support for emotional well-being",
+      "Boundary-setting and resource planning",
+      "Community and connection guidance",
+    ],
+    whoItsFor: [
+      "Single mothers and fathers",
+      "Widowed parents",
+      "Parents navigating divorce or separation",
+      "Solo parents by choice",
+      "Guardians raising children alone",
+    ],
+    isFeatured: false,
+  },
+
+  // 30. Old age Counselling
+  {
+    id: "old-age-counselling",
+    icon: "Heart",
+    title: "Old age Counselling",
+    shortDescription:
+      "Compassionate support for navigating the unique emotional and social aspects of aging.",
+    fullDescription:
+      "Aging brings new perspectives and challenges. Our Old Age Counselling (Geriatric Counselling) provides support for managing health changes, loss of loved ones, changes in independence, and finding continued meaning and joy in the later stages of life.",
+    image:
+      "https://images.unsplash.com/photo-1516307365426-bea591f05011?w=800&q=80",
+    benefits: [
+      "Improved emotional well-being in later life",
+      "Coping with health-related transitions",
+      "Processing grief and loss",
+      "Maintenance of social connection",
+      "Enhanced sense of purpose and legacy",
+    ],
+    whatToExpect: [
+      "Empathetic and patient-centered care",
+      "Addressing age-specific concerns",
+      "Support for cognitive and physical changes",
+      "Lifestory work and legacy exploration",
+      "Family involvement when appropriate",
+    ],
+    whoItsFor: [
+      "Older adults (65+)",
+      "Individuals facing age-related health issues",
+      "Seniors experiencing isolation or grief",
+      "Families of older adults",
+      "Anyone navigating the challenges of aging",
+    ],
+    isFeatured: false,
+  },
 ];
 
 // Get featured services (for home page)
-export const getFeaturedExpandedServices = () => allExpandedServices.filter(service => service.isFeatured);
+export const getFeaturedExpandedServices = () =>
+  allExpandedServices.filter((service) => service.isFeatured);
 
 // Get service by ID
-export const getExpandedServiceById = (id: string) => allExpandedServices.find(service => service.id === id);
+export const getExpandedServiceById = (id: string) =>
+  allExpandedServices.find((service) => service.id === id);
 
 // Get all services
 export const getAllExpandedServices = () => allExpandedServices;

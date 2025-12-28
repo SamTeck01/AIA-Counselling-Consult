@@ -5,28 +5,36 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { Link } from "react-router-dom";
-import { 
+import {
   ArrowRight,
-  HeartCrack, 
-  Briefcase, 
-  Brain, 
-  Lightbulb, 
-  Wind, 
-  Shield, 
-  HeartHandshake, 
-  Scale, 
-  Flame, 
-  Sparkles, 
-  Heart, 
-  Puzzle, 
-  Users, 
-  Zap, 
-  ShieldAlert, 
-  Apple, 
-  Users2, 
-  Baby, 
+  HeartCrack,
+  Briefcase,
+  Brain,
+  Lightbulb,
+  Wind,
+  Shield,
+  HeartHandshake,
+  Scale,
+  Flame,
+  Sparkles,
+  Heart,
+  Puzzle,
+  Users,
+  Zap,
+  ShieldAlert,
+  Apple,
+  Users2,
+  Baby,
   GraduationCap,
-  LucideIcon
+  Compass,
+  Flower2,
+  Coffee,
+  Globe,
+  ShieldCheck,
+  Accessibility,
+  Activity,
+  HeartPulse,
+  LucideIcon,
 } from "lucide-react";
 import { getFeaturedExpandedServices } from "@/data/expandedServicesData";
 
@@ -51,6 +59,14 @@ const iconMap: Record<string, LucideIcon> = {
   Users2,
   Baby,
   GraduationCap,
+  Compass,
+  Flower2,
+  Coffee,
+  Globe,
+  ShieldCheck,
+  Accessibility,
+  Activity,
+  HeartPulse,
 };
 
 export default function Services() {
@@ -59,7 +75,10 @@ export default function Services() {
   const services = getFeaturedExpandedServices();
 
   return (
-    <section id="services" className="py-20 bg-[#F5F8FC] relative overflow-hidden">
+    <section
+      id="services"
+      className="py-20 bg-[#F5F8FC] relative overflow-hidden"
+    >
       {/* Floating Accent Circle */}
       <motion.div
         animate={{
@@ -90,7 +109,8 @@ export default function Services() {
             transition={{ duration: 0.6 }}
             className="text-3xl md:text-5xl lg:text-[48px] leading-tight max-w-xl"
             style={{
-              fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+              fontFamily:
+                "'Playfair Display', Georgia, 'Times New Roman', serif",
               fontWeight: 400,
             }}
           >
@@ -104,7 +124,10 @@ export default function Services() {
             className="flex-shrink-0"
           >
             <Link to="/services">
-              <Button size="lg" className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary">
+              <Button
+                size="lg"
+                className="bg-[#E8F02C] hover:bg-[#E8F02C]/90 text-primary"
+              >
                 View All Services
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
@@ -130,14 +153,15 @@ export default function Services() {
                       <IconComponent className="w-8 h-8 text-primary" />
                     ) : null;
                   })()}
-                </div> 
+                </div>
 
                 {/* Title & Description */}
                 <div className="md:w-[100%]">
                   <h3
                     className="text-[20px] md:text-[22px] font-thin mb-2 group-hover:text-primary transition-colors"
                     style={{
-                      fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif",
+                      fontFamily:
+                        "'Playfair Display', Georgia, 'Times New Roman', serif",
                     }}
                   >
                     {service.title}

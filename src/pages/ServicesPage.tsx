@@ -26,6 +26,14 @@ import {
   Users2, 
   Baby, 
   GraduationCap,
+  Compass,
+  Flower2,
+  Coffee,
+  Globe,
+  ShieldCheck,
+  Accessibility,
+  Activity,
+  HeartPulse,
   LucideIcon
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -51,6 +59,14 @@ const iconMap: Record<string, LucideIcon> = {
   Users2,
   Baby,
   GraduationCap,
+  Compass,
+  Flower2,
+  Coffee,
+  Globe,
+  ShieldCheck,
+  Accessibility,
+  Activity,
+  HeartPulse,
 };
 
 export default function ServicesPage() {
@@ -90,7 +106,7 @@ export default function ServicesPage() {
               Comprehensive Counselling Services
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We offer 20 specialized counselling services designed to support your mental health 
+              We offer 30 specialized counselling services designed to support your mental health 
               and well-being. Click any service to learn more and book a session.
             </p>
           </motion.div>
